@@ -143,3 +143,25 @@ Los computadores con esta arquitectura constan de cinco partes:
 Como se puede observar, la CPU o microprocesador engloba a los registros, ALU y la Unidad de Control.
 
 [Simulador de un mensaje por pantalla](https://schweigi.github.io/assembler-simulator/){target=_blank}
+
+## 🧰 EJERCICIOS
+
+1. Averigua el coste de una licencia del sistema operativo Windows y de alguna distribución Linux como Ubuntu, Suse Linux o Fedora.
+
+2. ¿Cómo puedo conectar el PC a la televisión, cables requeridos y procedimiento de conexión?. En el caso de que existan varias formas de conectar PC y televisión, ¿cuál es la que me dará mejor calidad de imagen?
+
+3. Explica qué ventajas y desventajas que tienen los sistemas operativos basados en Linux frente a los sistemas operativos Microsoft.
+
+4. En los teléfonos móviles más modernos (smartphone) tienen algún tipo de firmware o sistema operativo. Enumera al menos cuatro Sistemas Operativos.
+
+5. ¿Para qué sirve un SAI (UPS en inglés)?, Encuentra dos SAI’s de uso doméstico y sus precios.
+
+6. Averigua el tipo de memoria RAM (SDRAM, SRAM, DDRAM, DDR...) tiene tu equipo (casa o clase) y las características tiene dicha memoria.
+
+7. Averigua qué tipo de BIOS utiliza tu computador (AMI, AWARD…).
+
+8. ¿Para qué sirve la pila del BIOS?, ¿Qué sucede cuando ésta deja de funcionar?, ¿en los nuevos computadores ocurre lo mismo cuando deja de funcionar?.
+
+9. ¿Qué son MFLOPS?, y ¿MIPS?.
+
+10. Existen muchos tipos de licencias de software . ¿Qué es una EULA?. Enumera los derechos y deberes de los tipos de licencias: GPL, Freeware, Shareware, privativa.
