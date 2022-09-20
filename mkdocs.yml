@@ -1,12 +1,29 @@
 site_name: 'Montaje y mantenimiento de sistemas y componentes informáticos'
 
+nav:
+  - Inicio: index.md
+  - Tema 1 - Montaje y mantenimiento de sistemas informáticos: 01-montaje.md
+  - Tema 2 - Ensamblaje de componentes hardware de un equipo microinformático: 02-ensamblaje.md
+  - Tema 3 - Instalación de sistemas operativos: 03-sistemas.md
+  - Tema 4 - Funcionalidad de los sistemas: 04-funcionalidad.md
+  - Tema 5 - Mantenimiento básico del equipo y periféricos: 05-mantenimiento.md
+  - Tema 6 - Almacenaje de equipos, periféricos y consumibles: 06-almacenaje.md
+
 theme:
   name: material
 
   palette:
-    scheme: slate
-    primary: 'deep orange'
-    accent: teal
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   
   font:
     text: Inter
@@ -20,3 +37,13 @@ theme:
     - navigation.top
 
     - header.autohide
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - glightbox
