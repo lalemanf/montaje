@@ -1,0 +1,22 @@
+site_name: 'Montaje y mantenimiento de sistemas y componentes informáticos'
+
+theme:
+  name: material
+
+  palette:
+    scheme: slate
+    primary: 'deep orange'
+    accent: teal
+  
+  font:
+    text: Inter
+  
+  language: es
+  
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.top
+
+    - header.autohide
