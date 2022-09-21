@@ -141,8 +141,162 @@ Los computadores con esta arquitectura constan de cinco partes:
 - Los Dispositivos de entrada/salida son los aparatos y/o dispositivos auxiliares e independientes conectados a la unidad central de procesamiento de una computadora, que proporcionan un medio de transporte de los datos entre las distintas partes.
 
 Como se puede observar, la CPU o microprocesador engloba a los registros, ALU y la Unidad de Control.
+<center>
+  [Simulador de un mensaje por pantalla](https://schweigi.github.io/assembler-simulator/){target=_blank}
+</center>
 
-[Simulador de un mensaje por pantalla](https://schweigi.github.io/assembler-simulator/){target=_blank}
+## Jerarquía de la memoria
+
+Se conoce como jerarquía de memoria a la organización piramidal de la memoria en niveles que tienen los computadores. Su objetivo es conseguir el rendimiento de una memoria de gran velocidad al coste de una memoria de baja velocidad, basándose en el principio de cercanía de referencias.
+
+<figure markdown>
+  ![Redes](media/01-memoria.png){ width="400" }
+  <figcaption></figcaption>
+</figure>
+
+Los puntos básicos relacionados con la memoria pueden resumirse en:
+
+- Cantidad
+- Velocidad
+- Coste
+
+La cuestión de la cantidad es simple, cuanto más memoria haya disponible, más podrá utilizarse.
+
+La velocidad óptima para la memoria es la velocidad a la que el procesador puede trabajar, de modo que no haya tiempos de espera entre cálculo y cálculo, utilizados para traer operandos o guardar resultados. En suma, el coste de la memoria no debe ser excesivo, para que sea factible construir un equipo accesible.
+
+Como puede esperarse los tres factores compiten entre sí, por lo que hay que encontrar un equilibrio. Las siguientes afirmaciones son válidas:
+
+- A menor tiempo de acceso mayor coste económico.
+- A mayor capacidad de almacenamiento menor coste económico por bit.
+- A mayor capacidad de almacenamiento menor velocidad de transferencia.
+- Se busca entonces contar con capacidad suficiente de memoria, con una velocidad que sirva para satisfacer la demanda de rendimiento y con un coste que no sea excesivo. Gracias a un principio llamado cercanía de referencias, es factible utilizar una mezcla de los distintos tipos y lograr un rendimiento cercano al de la memoria más rápida.
+
+Los niveles que componen la jerarquía de memoria habitualmente son:
+
+- **Nivel 0**: Registro (hardware)
+- **Nivel 1**: Memoria caché
+- **Nivel 2**: Memoria principal
+- **Nivel 3**: Memorias flash
+- **Nivel 4**: Disco duro (con el mecanismo de memoria virtual)
+- **Nivel 5**: Cintas magnéticas Consideradas las más lentas, con mayor capacidad.
+- **Nivel 6**: Red de computadoras|Redes (Actualmente se considera un nivel más de la jerarquía de memorias)
+
+
+## La Memoria Principal
+
+<figure markdown>
+  ![Redes](media/01-memoria-ram.png){ width="400" }
+  <figcaption>Memoria RAM (Random Access Memory)</figcaption>
+</figure>
+
+La memoria principal o primaria (Memoria Central) es aquella memoria de un computador donde se almacenan temporalmente, tanto los datos como los programas que la CPU está procesando o va a procesar en un determinado momento.
+
+Por su función, es una amiga inseparable del microprocesador, con el cual se comunica a través de los buses de datos. Por ejemplo, cuando la CPU tiene que ejecutar un programa, primero lo coloca en la memoria y después lo empieza a ejecutar. Lo mismo ocurre cuando necesita procesar una serie de datos; antes de poder procesarlos los tiene que llevar a la memoria principal.
+
+Esta clase de memoria es volátil, es decir que, cuando se corta la energía eléctrica, se borra toda la información que estuviera almacenada en ella.
+
+Por su función, la cantidad de memoria RAM de que disponga una computadora es una factor muy importante; hay programas y juegos que requieren una gran cantidad de memoria para poder usarlos, otros andarán más rápido si el sistema cuenta con más memoria RAM.
+
+El chip o circuito integrado es una pequeña pastilla de material semiconductor (silicio) que contiene múltiples circuitos integrados, tales como transistores, entre otros dispositivos electrónicos, con los que se realizan numerosas funciones en computadoras y dispositivos electrónicos; que permiten, interrumpen o aumentan el paso de la corriente. Estos chips están sobre una tarjeta o placa.
+
+El contenido de las memorias no es otra cosa que dígitos binarios o bits (binary digits), que se corresponden con dos estados lógicos: el 0 (cero) sin carga eléctrica y el 1 (uno) con carga eléctrica. A cada uno de estos estados se le llama bit, que es la unidad mínima de almacenamiento de datos.
+
+El microprocesador direcciona las posiciones de la RAM para poder acceder a los datos almacenados en ellas y para colocar los resultados de las operaciones.
+
+Al "bloque de Memoria Principal", suele llamarse memoria RAM, por ser éste el tipo de chips de memoria que conforman el bloque, pero se le asocian también el chip CMOS, que almacena al programa BIOS del sistema y los dispositivos periféricos de la memoria secundaria (discos y otros periféricos), para conformar el sub-sistema de memoria del computador.
+
+La estructura de la memoria principal ha cambiado en la historia de las computadoras. Desde los años 1980 es prevalentemente una unidad dividida en celdas que se identifican mediante una dirección. Está formada por bloques de circuitos integrados o chips capaces de almacenar, retener o "memorizar" información digital, es decir, valores binarios; a dichos bloques tiene acceso el microprocesador de la computadora.
+
+La Memoria Principal es el núcleo del sub-sistema de memoria de una computadora, y posee una menor capacidad de almacenamiento que la memoria secundaria, pero una velocidad millones de veces superior.
+
+<figure markdown>
+  ![Redes](media/01-memoria-4x4-512.png){ width="400" }
+  <figcaption>Memoria de 1980 donde de unos 4x4 cm ~ 512 bytes.</figcaption>
+</figure>
+
+
+### Tipos de memoria
+
+En las computadoras son utilizados 2 tipos de memoria:
+
+!!! DANGER "**ROM o memoria de sólo lectura (Read Only Memory)**"
+    Viene grabada de fábrica con una serie de programas. El software de la ROM se divide en dos partes:
+
+    - **Rutina de arranque o POST (Power On Self Test, auto diagnóstico de encendido)**
+    Realiza el chequeo de los componentes de la computadora; por ejemplo, circuitos controladores de video, de acceso a memoria, el teclado, unidades de disco,etc. Se encarga de determinar cuál es el hardware que está presente y de la puesta a punto de la computadora. Mediante un programa de configuración, el SETUP, lee una memoria llamada CMOS RAM (RAM de Semiconductor de óxido metálico). Ésta puede mantener su contenido durante varios años, aunque la computadora está apagada, con muy poca energía eléctrica suministrada por una batería, guarda la fecha, hora, la memoria disponible, capacidad de disco rígido, si tiene disquetera o no. Se encarga en el siguiente paso de realizar el arranque (booteo): lee un registro de arranque 'BR' (Boot Record) del disco duro o de otra unidad (como CD, USB, etc.), donde hay un programa que carga el sistema operativo a la RAM. A continuación cede el control a dicho sistema operativo y el computador queda listo para trabajar.
+    
+    - **Rutina BIOS o Sistema Básico de Entrada-Salida (Basic Input-Output System)**
+    permanece activa mientras se está usando el computador. Permite la activación de los periféricos de entrada/salida: teclado, monitor, ratón, etc. Se pueden modificar opciones básicas como el horario. Es indiferente al Sistema operativo.
+
+
+!!! WARNING "RWM o Memoria de lectura-escritura"
+    Es la memoria del usuario que contiene de forma temporal el programa, los datos y los resultados que están siendo usados por el usuario del computador. En general es volátil, pierde su contenido cuando se apaga el computador, es decir que mantiene los datos y resultados en tanto el bloque reciba alimentación eléctrica, a excepción de la CMOS RAM. Es común llamar erróneamente a la memoria de lectura escritura (RWM) como memoria (RAM), donde se confunde el tipo de memoria con la forma de acceso a ella. (Ver clasificación de memorias). Tanto la RWM como la ROM son circuitos integrados, llamados comúnmente chips.
+
+
+## El Bit y el Byte
+
+**Bit** es el acrónimo _Binary digit_ (dígito binario). Un bit es un dígito del sistema de numeración binario.
+
+Mientras que en el sistema de numeración decimal se usan diez dígitos, en el binario se usan sólo dos dígitos, el 0 y el 1. Un bit o dígito binario puede representar uno de esos dos valores, 0 ó 1.
+
+El bit es la unidad mínima de información empleada en informática, en cualquier dispositivo digital, o en la teoría de la información. Con él, podemos representar dos valores cuales quiera, como verdadero o falso, abierto o cerrado, blanco o negro, norte o sur, masculino o femenino, rojo o azul, etc. Basta con asignar uno de esos valores al estado de "apagado" (0), y el otro al estado de "encendido" (1).
+
+### Combinaciones de Bits
+
+Con un bit podemos representar solamente dos valores, que suelen representarse como 0, 1. Para representar o codificar más información en un dispositivo digital, necesitamos una mayor cantidad de bits. Si usamos dos bits, tendremos cuatro combinaciones posibles:
+
+<figure markdown>
+  ![Redes](media/01-bombillas.png){ width="400" }
+  <figcaption></figcaption>
+</figure>
+
+- 0 0 Los dos están "apagados"
+- 0 1 El primero (de izquierda a derecha) está "apagado" y el segundo "encendido"
+- 1 0 El primero (de izquierda a derecha) está "encendido" y el segundo "apagado"
+- 1 1 Los dos están "encendidos"
+
+Con estas cuatro combinaciones podemos representar hasta cuatro valores diferentes, como por ejemplo, los colores azul, verde, rojo y magenta.
+
+A través de secuencias de bits, se puede codificar cualquier valor discreto como números, palabras, e imágenes. Ocho bits forman un Byte, y se pueden representar hasta 28 = 256 valores diferentes. En general, con un número n de bits pueden representarse hasta 2n valores diferentes.
+
+
+## Arquitecturas de 32 y 64 bits
+
+Cuando se habla de CPUs o microprocesadores de 32, 64 bits, se refiere al tamaño, en número de bits, que tienen los registros internos del procesador y también a la capacidad de procesamiento de la Unidad aritmético lógica (ALU). Un microprocesador de 32 bits tiene registros de 32 bits y la ALU hace operaciones con los datos en esos registros de 32 bits, mientras que un procesador de 64 bits tiene registros y procesa los datos en grupos de 64 bits.
+
+Los procesadores de 64 bits pueden procesar los datos, dependiendo que su diseño lo permita, de 32 bits y 64 bits. Sin embargo, los registros de un procesador de 32 bits no pueden procesar datos de 64 bits pues no caben en estos registros.
+
+Cuando se habla de procesadores de, digamos 32 bits, nos referimos a su capacidad de procesar datos en hasta 32 bits simultáneamente. La denominación de "microprocesador de 32 bits" no se refiere al tamaño del bus de datos del CPU ni del bus de direcciones, sino a su capacidad de trabajar normalmente con los datos en el número máximo de bits (salvo alguna excepción).
+
+Cuando se habla de procesadores de, digamos 64 bits, nos referimos a su capacidad de procesar datos en hasta 64 bits simultáneamente. La denominación de "microprocesador de 64 bits" no se refiere al tamaño del bus de datos del CPU ni del bus de direcciones, sino a su capacidad de trabajar normalmente con los datos en el número máximo de bits (salvo alguna excepción).
+
+
+## Carga del Sistema Operativo
+
+<figure markdown>
+  ![Redes](media/01-arranque-so.png){ width="600" }
+  <figcaption>Secuencia de carga de un sistema operativo desde que un computador es conectado a la red eléctrica</figcaption>
+</figure>
+
+A grandes rasgos, cuando se conecta el suministro de corriente eléctrica el BIOS es cargada en la memoria, luego se ejecuta el POST que verifica el hardware del computador, si no hay errores durante el POST, se encarga de localizar el MBR del disco o una posición determinada de otro dispositivo (disco usb, disco de red, CD,...). Si lo encuentra, carga el bootloader que le pasa el control al sistema operativo oportuno. El sistema operativo es cargado en la memoria y finalmente presenta al usuario una primera pantalla del Sistema Operativo.
+
+<figure markdown>
+  ![Redes](media/01-post.png){ width="600" }
+  <figcaption>Secuancia POST</figcaption>
+</figure>
+
+### Ejecución de un programa
+
+Cuando nos _"bajamos"_ o descargamos un programa, es almacenado en una memoria secundaria (disco duro, SD,...) en este medio no es posible su ejecución. Cuando intentamos ejecutar haciendo doble clic en él, el programa es cargado en la memoria principal o RAM. Una vez cargado en la memoria principal, es posible su ejecución por el **Sistema Operativo**.
+
+
+
+
+
+
+
+
+
 
 ## 🧰 EJERCICIOS
 
@@ -154,14 +308,16 @@ Como se puede observar, la CPU o microprocesador engloba a los registros, ALU y 
 
 4. En los teléfonos móviles más modernos (smartphone) tienen algún tipo de firmware o sistema operativo. Enumera al menos cuatro Sistemas Operativos.
 
-5. ¿Para qué sirve un SAI (UPS en inglés)?, Encuentra dos SAI’s de uso doméstico y sus precios.
+5. ¿Para qué sirve un SAI (UPS en inglés)?, Encuentra dos SAI’s de uso doméstico y sus precios, añade algunas fotos de varios modelos con sus precios y características.
 
 6. Averigua el tipo de memoria RAM (SDRAM, SRAM, DDRAM, DDR...) tiene tu equipo (casa o clase) y las características tiene dicha memoria.
 
-7. Averigua qué tipo de BIOS utiliza tu computador (AMI, AWARD…).
+7. Averigua qué tipo de BIOS utiliza tu computador (AMI, AWARD…). Busca en Internet alguna manera de hacerlo y escribe en el documento que vayas a enviar la información que te da el programa.
 
-8. ¿Para qué sirve la pila del BIOS?, ¿Qué sucede cuando ésta deja de funcionar?, ¿en los nuevos computadores ocurre lo mismo cuando deja de funcionar?.
+8. ¿Para qué sirve la pila de la BIOS?, ¿Qué sucede cuando ésta deja de funcionar?, ¿en los nuevos computadores ocurre lo mismo cuando deja de funcionar?.
 
-9. ¿Qué son MFLOPS?, y ¿MIPS?.
+9. Existen muchos tipos de licencias de software . ¿Qué es una EULA?. Enumera los derechos y deberes de los tipos de licencias: GPL, Freeware, Shareware, privativa.
 
-10. Existen muchos tipos de licencias de software . ¿Qué es una EULA?. Enumera los derechos y deberes de los tipos de licencias: GPL, Freeware, Shareware, privativa.
+10. Hay otro tipo de placas bases de uso empresarial que funcionan con dos o más procesadores en una misma placa base son del tipo asimétrico. Localiza una de ellas y enumera las características, precio, ventajas y desventajas y una foto o diagrama.
+
+11. Explica qué es el POST y para qué sirve. ¿Qué significan dichas siglas y cuando se ejecuta?, ¿solo lo realizan los computadores?.
