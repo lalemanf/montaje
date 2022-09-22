@@ -290,8 +290,64 @@ A grandes rasgos, cuando se conecta el suministro de corriente eléctrica el BIO
 Cuando nos _"bajamos"_ o descargamos un programa, es almacenado en una memoria secundaria (disco duro, SD,...) en este medio no es posible su ejecución. Cuando intentamos ejecutar haciendo doble clic en él, el programa es cargado en la memoria principal o RAM. Una vez cargado en la memoria principal, es posible su ejecución por el **Sistema Operativo**.
 
 
+## Montaje y mantenimiento
 
+<figure markdown>
+  ![Redes](media/01-mantenimiento.png){ width="300" }
+  <figcaption></figcaption>
+</figure>
 
+Para montar un equipo informático ya sabemos que necesitamos varias cosas para llevar a cabo esta función. Además, como cualquier otro sistema, necesita de un mantenimiento para que todo funcione como el primer día puesto que del uso, los componentes electrónicos pierden sus características.
+
+### Elementos básicos
+
+A continuación vamos a ver una serie de componentes básicos de un ordenador
+
+#### 🔋 Pilas y baterías
+
+<figure markdown>
+  ![Redes](media/01-pila.png){ width="200" }
+  <figcaption>Pila de botón</figcaption>
+</figure>
+
+Las **pilas** suelen ser una pequeñas baterías redondas y planas que se se adhieren a la placa base con la función de no dejar sin energía a la placa base.
+
+Cuando desenchufamos un ordenador de la toma de corriente, es la pila quién entra en acción para que la configuración de la placa base (la BIOS) junto con la fecha y la hora no se pierdan en el próximo inicio de la máquina.
+
+<figure markdown>
+  ![Redes](media/01-bateria.png){ width="300" }
+  <figcaption>Batería de un portátil</figcaption>
+</figure>
+
+Las **baterías** suelen estar presentes en todos los ordenadores portátiles de hoy en día y su función principal es la de proporcionar energía a todo el ordenador para que pueda usarse sin un cable de corriente.
+
+Dichas baterías suelen tener un voltaje y un amperaje determinados así como una determinada duración, dependiendo del rendimiento que le demos a éste.
+
+### 🔴 Pulsadores
+
+<figure markdown>
+  ![Redes](media/01-pulsador.png){ width="300" }
+  <figcaption>Pulsador de encendido</figcaption>
+</figure>
+
+Los pulsadores son botones que normalmente al tacto se hunden y envían una señal a la placa base que esté conectada.
+
+Suelen tener 2 estados diferentes:
+
+  - Encendido: Cuando pulsamos
+  - Apagado: cuando **NO** tocamos el botón
+
+!!! DANGER "¿dónde encontramos pulsadores?"
+    El botón de encendido de un PC, los botones de un ratón, las teclas de un teclado, los botones de un mando para jugar o un mando a distancia son algunos ejemplos
+
+### 🔰 Interruptores
+
+Los interruptores tienen la función de hacer pasar la energío por un canal o por otro. Normalmente tienen 2 posiciones pero pueden tener muchas más.
+
+Dicha energía puede ser desviada por tantos caminos como posiciones tenga el interruptor.
+
+!!! WARNING ""
+    El enchufe de la luz de una casa se consideraría el típico ejemplo de interruptor donde una posición deja pasar la energía para encender la luz y la otra posición envía la energía a la toma de tierra cortando así la luz y apagando la bombilla
 
 
 
@@ -300,13 +356,13 @@ Cuando nos _"bajamos"_ o descargamos un programa, es almacenado en una memoria s
 
 ## 🧰 EJERCICIOS
 
-1. Averigua el coste de una licencia del sistema operativo Windows y de alguna distribución Linux como Ubuntu, Suse Linux o Fedora.
+1. ❎ Averigua el coste de una licencia del sistema operativo Windows y de alguna distribución Linux como Ubuntu, Suse Linux o Fedora.
 
-2. ¿Cómo puedo conectar el PC a la televisión, cables requeridos y procedimiento de conexión?. En el caso de que existan varias formas de conectar PC y televisión, ¿cuál es la que me dará mejor calidad de imagen?
+2. ❎ ¿Cómo puedo conectar el PC a la televisión, cables requeridos y procedimiento de conexión?. En el caso de que existan varias formas de conectar PC y televisión, ¿cuál es la que me dará mejor calidad de imagen?
 
-3. Explica qué ventajas y desventajas que tienen los sistemas operativos basados en Linux frente a los sistemas operativos Microsoft.
+3. ❎ Explica qué ventajas y desventajas que tienen los sistemas operativos basados en Linux frente a los sistemas operativos Microsoft.
 
-4. En los teléfonos móviles más modernos (smartphone) tienen algún tipo de firmware o sistema operativo. Enumera al menos cuatro Sistemas Operativos.
+4. En los teléfonos móviles más modernos (smartphones) tienen algún tipo de firmware o sistema operativo. Enumera al menos cuatro Sistemas Operativos.
 
 5. ¿Para qué sirve un SAI (UPS en inglés)?, Encuentra dos SAI’s de uso doméstico y sus precios, añade algunas fotos de varios modelos con sus precios y características.
 
@@ -318,6 +374,6 @@ Cuando nos _"bajamos"_ o descargamos un programa, es almacenado en una memoria s
 
 9. Existen muchos tipos de licencias de software . ¿Qué es una EULA?. Enumera los derechos y deberes de los tipos de licencias: GPL, Freeware, Shareware, privativa.
 
-10. Hay otro tipo de placas bases de uso empresarial que funcionan con dos o más procesadores en una misma placa base son del tipo asimétrico. Localiza una de ellas y enumera las características, precio, ventajas y desventajas y una foto o diagrama.
+10. Hay otro tipo de placas base de uso empresarial que funcionan con dos o más procesadores en una misma placa base son del tipo asimétrico. Localiza una de ellas y enumera las características, precio, ventajas y desventajas y una foto o diagrama.
 
 11. Explica qué es el POST y para qué sirve. ¿Qué significan dichas siglas y cuando se ejecuta?, ¿solo lo realizan los computadores?.
