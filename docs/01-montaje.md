@@ -12,7 +12,7 @@ El objetivo de este tema es servir de introducción al resto de contenidos de es
 - jerarquías de la memoria y sus funciones.
 - tipos de arquitecturas.
 
-## Vocabulario
+## 📒 Vocabulario
 
 ??? INFO "Boot"
     La secuencia de arranque, (boot o booting en inglés) es el proceso que inicia el sistema operativo cuando el usuario enciende una computadora. Se encarga de la inicialización del sistema y de los dispositivos.
@@ -38,7 +38,7 @@ El objetivo de este tema es servir de introducción al resto de contenidos de es
 ??? INFO "Volátil"
     Es una propiedad de inconsistencia que tienen algunos dispositivos a perder la información almacenada en ellos cuando se deja de suministrar energía eléctrica. Se aplica a la memoria RAM.
 
-## Sistema informático
+## 💻 Sistema informático
 
 <figure markdown>
   ![Redes](media/01-sistema-informatico.jpg){ width="400" }
@@ -54,14 +54,14 @@ El **software** incluye al sistema operativo, firmware y aplicaciones, siendo es
 Por último el **soporte** humano incluye al personal técnico que crean y mantienen el sistema (analistas, programadores, operarios, etc.) y a los usuarios que lo utilizan.
 
 
-## Programa
+## 👾 Programa
 
 Un programa informático es un conjunto de instrucciones que una vez ejecutadas realizarán una o varias tareas en una computadora. Sin programas, estas máquinas no pueden funcionar.
 
 Al conjunto general de programas, se le denomina _software_, que más genéricamente se refiere al equipamiento lógico o soporte lógico de una computadora digital.
 
 
-## Sistema Operativo
+## 📺 Sistema Operativo
 
 <figure markdown>
   ![Redes](media/01-sistemas.png){ width="600" }
@@ -82,7 +82,7 @@ Nótese que es un error común muy extendido denominar al conjunto completo de h
 - Debian gnu/Linux
 - Ubuntu GNU/Linux
 
-## Firmware
+## ⚙️ Firmware
 
 <figure markdown>
   ![Redes](media/01-firmware.png){ width="200" }
@@ -97,7 +97,7 @@ En resumen, un firmware **es el software que maneja al hardware**.
 
 El programa **_BIOS_** de una computadora es un firmware cuyo propósito es activar una máquina desde su encendido y preparar el entorno para cargar un sistema operativo en la memoria **RAM**.
 
-## Drivers
+## 🛠️ Drivers
 
 <figure markdown>
   ![Redes](media/01-driver.png){ width="200" }
@@ -113,7 +113,7 @@ Por tanto, es una pieza esencial sin la cual no se podría usar el hardware.
 !!! INFO "Tipos de Drivers"
     Existen tantos tipos de controladores como tipos de periféricos, y es común encontrar más de un controlador posible para el mismo dispositivo, cada uno ofreciendo un nivel distinto de funcionalidades. Por ejemplo, aparte de los oficiales (normalmente disponibles en la página web del fabricante), se pueden encontrar también los proporcionados por el sistema operativo, o también versiones no oficiales hechas por terceros.
 
-## Funcionamiento de un ordenador
+## 🪛 Funcionamiento de un ordenador
 
 <figure markdown>
   ![Redes](media/01-von-neuman.jpg){ width="400" }
@@ -124,7 +124,7 @@ La arquitectura de [von Neumann](https://es.wikipedia.org/wiki/Arquitectura_de_V
 
 La mayoría de computadoras modernas están basadas en esta arquitectura, aunque pueden incluir otros dispositivos adicionales, (por ejemplo, para gestionar las interrupciones de dispositivos externos como ratón, teclado, etc).
 
-### Organización
+### 💼 Organización
 
 Los computadores con esta arquitectura constan de cinco partes:
 
@@ -145,7 +145,7 @@ Como se puede observar, la CPU o microprocesador engloba a los registros, ALU y 
   [Simulador de un mensaje por pantalla](https://schweigi.github.io/assembler-simulator/){target=_blank}
 </center>
 
-## Jerarquía de la memoria
+## 🧫 Jerarquía de la memoria
 
 Se conoce como jerarquía de memoria a la organización piramidal de la memoria en niveles que tienen los computadores. Su objetivo es conseguir el rendimiento de una memoria de gran velocidad al coste de una memoria de baja velocidad, basándose en el principio de cercanía de referencias.
 
@@ -182,7 +182,7 @@ Los niveles que componen la jerarquía de memoria habitualmente son:
 - **Nivel 6**: Red de computadoras|Redes (Actualmente se considera un nivel más de la jerarquía de memorias)
 
 
-## La Memoria Principal
+## 📚 La Memoria Principal
 
 <figure markdown>
   ![Redes](media/01-memoria-ram.png){ width="400" }
@@ -215,7 +215,7 @@ La Memoria Principal es el núcleo del sub-sistema de memoria de una computadora
 </figure>
 
 
-### Tipos de memoria
+### 📗 Tipos de memoria
 
 En las computadoras son utilizados 2 tipos de memoria:
 
@@ -233,7 +233,7 @@ En las computadoras son utilizados 2 tipos de memoria:
     Es la memoria del usuario que contiene de forma temporal el programa, los datos y los resultados que están siendo usados por el usuario del computador. En general es volátil, pierde su contenido cuando se apaga el computador, es decir que mantiene los datos y resultados en tanto el bloque reciba alimentación eléctrica, a excepción de la CMOS RAM. Es común llamar erróneamente a la memoria de lectura escritura (RWM) como memoria (RAM), donde se confunde el tipo de memoria con la forma de acceso a ella. (Ver clasificación de memorias). Tanto la RWM como la ROM son circuitos integrados, llamados comúnmente chips.
 
 
-## El Bit y el Byte
+## 💱 El Bit y el Byte
 
 **Bit** es el acrónimo _Binary digit_ (dígito binario). Un bit es un dígito del sistema de numeración binario.
 
@@ -241,7 +241,7 @@ Mientras que en el sistema de numeración decimal se usan diez dígitos, en el b
 
 El bit es la unidad mínima de información empleada en informática, en cualquier dispositivo digital, o en la teoría de la información. Con él, podemos representar dos valores cuales quiera, como verdadero o falso, abierto o cerrado, blanco o negro, norte o sur, masculino o femenino, rojo o azul, etc. Basta con asignar uno de esos valores al estado de "apagado" (0), y el otro al estado de "encendido" (1).
 
-### Combinaciones de Bits
+### 👛 Combinaciones de Bits
 
 Con un bit podemos representar solamente dos valores, que suelen representarse como 0, 1. Para representar o codificar más información en un dispositivo digital, necesitamos una mayor cantidad de bits. Si usamos dos bits, tendremos cuatro combinaciones posibles:
 
@@ -260,7 +260,7 @@ Con estas cuatro combinaciones podemos representar hasta cuatro valores diferent
 A través de secuencias de bits, se puede codificar cualquier valor discreto como números, palabras, e imágenes. Ocho bits forman un Byte, y se pueden representar hasta 28 = 256 valores diferentes. En general, con un número n de bits pueden representarse hasta 2n valores diferentes.
 
 
-## Arquitecturas de 32 y 64 bits
+## 🏛️ Arquitecturas de 32 y 64 bits
 
 Cuando se habla de CPUs o microprocesadores de 32, 64 bits, se refiere al tamaño, en número de bits, que tienen los registros internos del procesador y también a la capacidad de procesamiento de la Unidad aritmético lógica (ALU). Un microprocesador de 32 bits tiene registros de 32 bits y la ALU hace operaciones con los datos en esos registros de 32 bits, mientras que un procesador de 64 bits tiene registros y procesa los datos en grupos de 64 bits.
 
@@ -271,7 +271,7 @@ Cuando se habla de procesadores de, digamos 32 bits, nos referimos a su capacida
 Cuando se habla de procesadores de, digamos 64 bits, nos referimos a su capacidad de procesar datos en hasta 64 bits simultáneamente. La denominación de "microprocesador de 64 bits" no se refiere al tamaño del bus de datos del CPU ni del bus de direcciones, sino a su capacidad de trabajar normalmente con los datos en el número máximo de bits (salvo alguna excepción).
 
 
-## Carga del Sistema Operativo
+## 👨‍💻 Carga del Sistema Operativo
 
 <figure markdown>
   ![Redes](media/01-arranque-so.png){ width="600" }
@@ -285,12 +285,12 @@ A grandes rasgos, cuando se conecta el suministro de corriente eléctrica el BIO
   <figcaption>Secuancia POST</figcaption>
 </figure>
 
-### Ejecución de un programa
+### ⛓️ Ejecución de un programa
 
 Cuando nos _"bajamos"_ o descargamos un programa, es almacenado en una memoria secundaria (disco duro, SD,...) en este medio no es posible su ejecución. Cuando intentamos ejecutar haciendo doble clic en él, el programa es cargado en la memoria principal o RAM. Una vez cargado en la memoria principal, es posible su ejecución por el **Sistema Operativo**.
 
 
-## Montaje y mantenimiento
+## 🔧 Montaje y mantenimiento
 
 <figure markdown>
   ![Redes](media/01-mantenimiento.png){ width="300" }
@@ -299,7 +299,7 @@ Cuando nos _"bajamos"_ o descargamos un programa, es almacenado en una memoria s
 
 Para montar un equipo informático ya sabemos que necesitamos varias cosas para llevar a cabo esta función. Además, como cualquier otro sistema, necesita de un mantenimiento para que todo funcione como el primer día puesto que del uso, los componentes electrónicos pierden sus características.
 
-### Elementos básicos
+### 🅱️ Elementos básicos
 
 A continuación vamos a ver una serie de componentes básicos de un ordenador
 
@@ -373,6 +373,16 @@ Por un lado, tenemos un cable que viene del enchufe de nuestra casa y se conecta
 
 !!! INFO "Dato importante"
     Como norma general, las fuentes de alimentación vienen con un ventilador, instalado en la parte donde conectamos el cable de electricidad, que hace la función de enfriar la propia fuente para que no se sobrecaliente
+
+
+
+
+
+
+
+
+
+
 
 
 
