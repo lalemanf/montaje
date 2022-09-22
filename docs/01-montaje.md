@@ -323,7 +323,7 @@ Las **baterías** suelen estar presentes en todos los ordenadores portátiles de
 
 Dichas baterías suelen tener un voltaje y un amperaje determinados así como una determinada duración, dependiendo del rendimiento que le demos a éste.
 
-### 🔴 Pulsadores
+#### 🔴 Pulsadores
 
 <figure markdown>
   ![Redes](media/01-pulsador.png){ width="300" }
@@ -340,16 +340,30 @@ Suelen tener 2 estados diferentes:
 !!! DANGER "¿dónde encontramos pulsadores?"
     El botón de encendido de un PC, los botones de un ratón, las teclas de un teclado, los botones de un mando para jugar o un mando a distancia son algunos ejemplos
 
-### 🔰 Interruptores
+#### 🔰 Interruptores
 
-Los interruptores tienen la función de hacer pasar la energío por un canal o por otro. Normalmente tienen 2 posiciones pero pueden tener muchas más.
+<figure markdown>
+  ![Redes](media/01-interruptor.jpg){ width="200" }
+  <figcaption></figcaption>
+</figure>
 
-Dicha energía puede ser desviada por tantos caminos como posiciones tenga el interruptor.
+Los interruptores (_switch_ en inglés) tienen la función de hacer pasar la energía por un canal (cable) o por otro. Normalmente tienen 2 posiciones pero pueden tener muchas más.
 
-!!! WARNING ""
+Dicha energía (o señal) puede ser desviada por tantos caminos como posiciones tenga el interruptor.
+
+!!! WARNING "Ejemplo"
     El enchufe de la luz de una casa se consideraría el típico ejemplo de interruptor donde una posición deja pasar la energía para encender la luz y la otra posición envía la energía a la toma de tierra cortando así la luz y apagando la bombilla
 
+#### ✨ Fuente de alimentación
 
+<figure markdown>
+  ![Redes](media/01-fuente.png){ width="600" }
+  <figcaption>Fuente de alimentación de un PC</figcaption>
+</figure>
+
+La fuente de alimentación (_Power Supply Unit_) tiene la función de transformar la energía de [corriente alterna](https://es.wikipedia.org/wiki/Corriente_alterna){target="_blank"} (CA) a [corriente contínua](https://es.wikipedia.org/wiki/Corriente_continua){target="_blank"} (CC) para alimentar los circuitos electrónicos y los dispositivos conectados a dichos circuitos; en nuestro caso, a la placa base.
+
+Por un lado, tenemos un cable que viene del enchufe de nuestra casa y se conecta a la **fuente de alimentación** que transforma la energía y la dispersa a través de numerosos cables de distintos colores y clavijas a todos los aparatos de la placa base.
 
 
 
