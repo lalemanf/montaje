@@ -365,6 +365,15 @@ La fuente de alimentación (_Power Supply Unit_) tiene la función de transforma
 
 Por un lado, tenemos un cable que viene del enchufe de nuestra casa y se conecta a la **fuente de alimentación** que transforma la energía y la dispersa a través de numerosos cables de distintos colores y clavijas a todos los aparatos de la placa base.
 
+<figure markdown>
+  ![Redes](media/01-fuente-conectores.jpg){ width="600" }
+  <figcaption>Conectores Fuente de Alimentación</figcaption>
+</figure>
+
+
+!!! INFO "Dato importante"
+    Como norma general, las fuentes de alimentación vienen con un ventilador, instalado en la parte donde conectamos el cable de electricidad, que hace la función de enfriar la propia fuente para que no se sobrecaliente
+
 
 
 
@@ -391,3 +400,5 @@ Por un lado, tenemos un cable que viene del enchufe de nuestra casa y se conecta
 10. Hay otro tipo de placas base de uso empresarial que funcionan con dos o más procesadores en una misma placa base son del tipo asimétrico. Localiza una de ellas y enumera las características, precio, ventajas y desventajas y una foto o diagrama.
 
 11. Explica qué es el POST y para qué sirve. ¿Qué significan dichas siglas y cuando se ejecuta?, ¿solo lo realizan los computadores?.
+
+12. Identifica los distintos conectores que se muestran en la fotografía de **La fuente de alimentación** y ponlos en un documentos enumerados del 1 al 8 tal y como salen en la foto. Busca información en Internet para realizar el ejercicio.
