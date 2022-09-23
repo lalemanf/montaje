@@ -61,6 +61,36 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
 </label>
 </form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Búsqueda" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Búsqueda" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Limpiar" class="md-search__icon md-icon" tabindex="-1" title="Limpiar" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
 </nav>
 </header>
 <div class="md-container" data-md-component="container">
@@ -129,6 +159,154 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="bienvenids-a-montaje-y-mantenimiento-de-sistemas-y-componentes-informaticos">Bienvenid@s a Montaje y mantenimiento de sistemas y componentes informáticos</h1>
+<p>En esta asignatura veremos las tripas a los ordenadores, como funcionan por dentro los distintos aparatos electrónicos que lo componen, cómo se comunica el <strong><em>software</em></strong> con el <strong><em>hardware</em></strong> mediante diferentes sistemas operativos y el mantenimiento necesario para todo un sistema informático.</p>
+<figure>
+<p><a class="glightbox" href="media/00-montaje.png"><img alt="PAN" src="media/00-montaje.png" width="500"/></a>
+</p>
+<figcaption></figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Tema 1 ~ MONTAJE Y MANTENIMIENTO DE SISTEMAS INFORMÁTICOS</p>
+<ul>
+<li>Se han descrito las operaciones y comprobaciones previas a la manipulación segura de componentes eléctricos y/o electrónicos</li>
+<li>Se han identificado los dispositivos y herramientas necesarios en la manipulación segura de sistemas electrónicos</li>
+<li>Se han seleccionado las herramientas necesarias para el procedimiento de montaje, sustitución o conexión de componentes hardware de un sistema microinformático</li>
+<li>Se han identificado funcionalmente los componentes hardware para el ensamblado y/o mantenimiento de un equipo microinformático</li>
+<li>Se han descrito las características técnicas de cada uno de los componentes hardware (internos y externos) utilizados en el montaje y/o mantenimiento de un equipo microinformático</li>
+<li>Se han localizado los bloques funcionales en placas bases utilizadas en los sistemas microinformáticos</li>
+<li>Se han identificado los tipos de puertos, bahías internas y cables de conexión (de datos y eléctricos, entre otros) existentes de un equipo microinformático</li>
+<li>Se han seguido las instrucciones recibidas</li>
+</ul>
+<details class="question">
+<summary>Desglose</summary>
+<ul>
+<li>Elementos básicos: Pilas y baterías, pulsadores, interruptores, fuentes de alimentación, resistencias, condensadores, diodos, transistores, led, entre otros</li>
+<li>Herramientas utilizadas en los procedimientos de montaje de componentes y periféricos informáticos</li>
+<li>Unidades funcionales de un sistema informático</li>
+<li>Componentes de los sistemas microinformáticos: tipos de carcasas, fuentes de alimentación, ventiladores y disipadores de calor</li>
+<li>La placa base Microprocesadores, zócalos y tipos Memorias RAM, características y formatos</li>
+<li>Buses y conectores de datos</li>
+<li>Cableado y conectores de potencia</li>
+<li>Zócalos y bahías de expansión</li>
+<li>Dispositivos de almacenamiento: discos duros, características y tipos; Lectores/grabadores ópticos y magneto-ópticos, características y tipos</li>
+<li>Puertos: paralelo, serie, USB (Bus de Serie Universal), «Firewire» (IEEE 1394), entre otros</li>
+<li>Seguridad en el uso de herramientas y componentes eléctricos y electrónicos</li>
+<li>Seguridad eléctrica: medidas de prevención de riesgos eléctricos; daños producidos por descarga eléctrica</li>
+</ul>
+</details>
+</div>
+<div class="admonition tldr">
+<p class="admonition-title">Tema 2 ~ ENSAMBLAJE DE COMPONENTES HARDWARE DE UN EQUIPO MICROINFORMÁTICO</p>
+<ul>
+<li>Se ha comprobado cada componente antes de su utilización, siguiendo las normas de seguridad establecidas</li>
+<li>Se han interpretado las guías de instrucciones referentes a los procedimientos de integración o ensamblado, sustitución y conexión del componente hardware de un sistema microinformático</li>
+<li>Se han reconocido en distintas placas base cada uno de los zócalos de conexión de microprocesadores y los disipadores, entre otros</li>
+<li>Se han ensamblado los componentes hardware internos (memoria, procesador, tarjeta de video, pila, entre otros) en la placa base del sistema microinformático</li>
+<li>Se ha fijado cada dispositivo o tarjeta en la ranura o bahía correspondiente, según guías detalladas de instalación</li>
+<li>Se han conectado adecuadamente aquellos componentes hardware internos (disco duro, DVD, CD-ROM, entre otros) que necesiten cables de conexión para su integración en el sistema microinformático</li>
+</ul>
+<details class="question">
+<summary>Desglose</summary>
+<ul>
+<li>Procedimientos de instalación y fijación de componentes microinformático a la carcasa y a la placa base</li>
+<li>Periféricos básicos: monitor, teclado, ratón e impresoras</li>
+<li>Otros periféricos: altavoces, micrófono, escáner, dispositivos multimedia, entre otros</li>
+<li>Técnicas de montaje, sustitución y conexión de componentes y periféricos microinformáticos Las guías de montaje</li>
+<li>La Seguridad en las operaciones de montaje, sustitución y conexión de componentes y periféricos microinformáticos</li>
+</ul>
+</details>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Tema 3 ~ INSTALACIÓN DE SISTEMAS OPERATIVOS</p>
+<ul>
+<li>Se han descrito los pasos a seguir para la instalación o actualización</li>
+<li>Se ha verificado la ausencia de errores durante el proceso de carga del sistema operativo</li>
+<li>Se han utilizado las herramientas de control para la estructura de directorios y la gestión de permisos</li>
+<li>Se han instalado actualizaciones y parches del sistema operativo según las instrucciones recibidas</li>
+<li>Se han realizado copias de seguridad de los datos</li>
+<li>Se han anotado los posibles fallos producidos en la fase de arranque del equipo microinformático</li>
+<li>Se han descrito las funciones de replicación física («clonación») de discos y particiones en sistemas microinformáticos</li>
+<li>Se han utilizado herramientas software para la instalación de imágenes de discos o particiones señalando las restricciones de aplicación de las mismas</li>
+<li>Se ha verificado la funcionalidad de la imagen instalada, teniendo en cuenta el tipo de «clonación» realizada</li>
+</ul>
+<details class="question">
+<summary>Desglose</summary>
+<ul>
+<li>El software básico de un sistema informático</li>
+<li>Funciones del sistema operativo</li>
+<li>Utilización del sistema operativo</li>
+<li>Sistemas operativos actuales</li>
+<li>Operaciones con el sistema de archivos, directorios y permisos</li>
+<li>Herramientas de creación e implantación de imágenes y réplicas de sistemas: orígenes de información; procedimientos de implantación de imágenes y réplicas de sistemas; procedimientos de verificación de imágenes y réplicas de sistemas</li>
+</ul>
+</details>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tema 4 ~ FUNCIONALIDAD DE LOS SISTEMAS</p>
+<ul>
+<li>Se ha aplicado a cada componente hardware y periférico el procedimiento de testeo adecuado</li>
+<li>Se ha verificado que el equipo microinformático realiza el procedimiento de encendido y de POST (Power On Self Test), identificando el origen de los problemas, en su caso</li>
+<li>Se ha comprobado la funcionalidad de los soportes para almacenamiento de información</li>
+<li>Se ha verificado la funcionalidad en la conexión entre componentes del equipo microinformático y con los periféricos</li>
+<li>Se han utilizado herramientas de configuración, testeo y comprobación para verificar el funcionamiento del sistema</li>
+<li>Se han utilizado las herramientas y guías de uso para comprobar el estado de los soportes y de la información contenida en los mismos</li>
+<li>Se han registrado los resultados y las incidencias producidas en los procesos de comprobación</li>
+</ul>
+<details class="question">
+<summary>Desglose</summary>
+<ul>
+<li>Técnicas de verificación y testeo de sistemas microinformáticos</li>
+<li>Software de testeo y verificación</li>
+<li>Herramientas de verificación y diagnóstico de sistemas microinformáticos</li>
+<li>Procedimientos de POST (Power-On Self Test)</li>
+<li>Conexión de dispositivos periféricos en el sistema microinformático</li>
+</ul>
+</details>
+</div>
+<div class="admonition check">
+<p class="admonition-title">Tema 5 ~ MANTENIMIENTO BÁSICO DEL EQUIPO Y PERIFÉRICOS</p>
+<ul>
+<li>Se ha comprobado por medio de indicadores luminosos, que los periféricos conectados tienen alimentación eléctrica y las conexiones de datos</li>
+<li>Se han descrito los elementos consumibles necesarios para ser utilizados en los periféricos de sistemas microinformáticos</li>
+<li>Se han utilizado las guías técnicas detalladas para sustituir elementos consumibles</li>
+<li>Se han descrito las características de los componentes, de los soportes y de los periféricos para conocer los aspectos que afecten a su mantenimiento</li>
+<li>Se han utilizado las guías de los fabricantes para identificar los procedimientos de limpieza de componentes, soportes y periféricos</li>
+<li>Se ha realizado la limpieza de componentes, soportes y periféricos respetando las disposiciones técnicas establecidas por el fabricante manteniendo su funcionalidad</li>
+<li>Se han recogido los residuos y elementos desechables de manera adecuada para su eliminación o reciclaje</li>
+</ul>
+<details class="question">
+<summary>Desglose</summary>
+<ul>
+<li>Técnicas auxiliares de mantenimiento de sistemas microinformáticos: El mantenimiento preventivo y periódico</li>
+<li>Medidas de conservación y reciclaje de elementos consumibles</li>
+<li>Procedimientos de sustitución de elementos consumibles</li>
+<li>Seguridad en la manipulación y sustitución de elementos consumibles</li>
+</ul>
+</details>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Tema 6 ~ ALMACENAJE DE EQUIPOS, PERIFÉRICOS Y CONSUMIBLES</p>
+<ul>
+<li>Se han descrito las condiciones para manipular, transportar y almacenar componentes y periféricos de un sistema microinformático</li>
+<li>Se han identificado los tipos de embalaje para el transporte y/o almacenaje de cada dispositivo, periférico y consumible</li>
+<li>Se han utilizado las herramientas necesarias para realizar las tareas de etiquetado previas al embalaje y/o almacenamiento de sistemas, periféricos y consumibles</li>
+<li>Se han utilizado los medios auxiliares adecuados a los elementos a transportar</li>
+<li>Se han aplicado las normas de seguridad en la manipulación y el transporte de elementos y equipos</li>
+<li>Se ha comprobado que los componentes recepcionados se corresponden con el albarán de entrega y que se encuentran en buen estado</li>
+<li>Se han registrado las operaciones realizadas siguiendo los formatos establecidos</li>
+<li>Se han recogido los elementos desechables para su eliminación o reciclaje</li>
+</ul>
+<details class="question">
+<summary>Desglose</summary>
+<ul>
+<li>Técnicas de etiquetado, embalaje, almacenamiento y traslado de sistemas y componentes informáticos</li>
+<li>Procedimientos y herramientas de etiquetado</li>
+<li>Embalaje de componentes y periféricos de un sistema microinformático</li>
+<li>Precauciones a considerar en el traslado de sistemas microinformáticos</li>
+<li>Tratamiento, reciclaje y eliminación de residuos informáticos</li>
+</ul>
+</details>
+</div>
 </article>
 </div>
 </div>

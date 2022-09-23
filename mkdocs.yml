@@ -27,8 +27,8 @@ theme:
   
   font:
     text: Inter
-  
   language: es
+  
   
   features:
     - navigation.instant
@@ -47,3 +47,4 @@ markdown_extensions:
 
 plugins:
   - glightbox
+  - search
