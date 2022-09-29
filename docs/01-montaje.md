@@ -354,7 +354,99 @@ Dicha energía (o señal) puede ser desviada por tantos caminos como posiciones 
 !!! WARNING "Ejemplo"
     El enchufe de la luz de una casa se consideraría el típico ejemplo de interruptor donde una posición deja pasar la energía para encender la luz y la otra posición envía la energía a la toma de tierra cortando así la luz y apagando la bombilla
 
-#### ✨ Fuente de alimentación
+## 🖥️ Componentes de un sistema informático
+
+Todo sistema informático está compuesto, como ya hemos visto, por varios dispositivos conectados entre sí mediante cables o soldados directamente en la placa base (_mainboard_).
+
+### 📦 Carcasas
+
+<figure markdown>
+  ![Redes](media/01-carcasa.jfif){ width="300" }
+  <figcaption>Tripas de una carcasa de un PC</figcaption>
+</figure>
+
+Son el armazón del equipo que contiene los componentes del computador, normalmente construidos de acero, plástico o aluminio. También podemos encontrarlas de otros materiales como madera o polimetilmetacrilato para cajas de diseño. A menudo de metal electrogalvanizado. Su función es la de proteger los componentes del computador. Es la caja o lugar donde se alojan todos los componentes internos del computador, el tipo de caja a utilizar depende de las características propias de la computadora donde se deben tener en cuenta: el tamaño, tipo de conectores internos, bahías para las unidades reproductoras/grabadoras de CD/DVD y la fuente de alimentación
+
+#### La cubierta
+
+Constituye la parte exterior de la caja y se adhiere al chasis. La mayoría de los computadores utilizan varios tornillos para asegurar la cubierta al chasis, aunque también existen sistemas sin tornillos, que emplean agujeros para sujeción o cierres por deslizamiento. En la actualidad, hay multitud de tipos de cubiertas, con diferentes materiales y colores, que en combinación con el chasis permiten modificar el aspecto del computador a gusto del usuario. Computadores transparentes, con luces de neón, con formas, etc.
+
+
+#### El panel frontal y cableado LED/SW
+
+El panel frontal cubre la parte delantera de la cubierta y muestra información al usuario acerca del estado del computador mediante luces LED (encendido, uso del disco duro, etc.). Además, contiene los botones o interruptores de encendido y de reinicio (o reset). EI botón de encendido está conectado a la placa base mediante un cable de dos hilos etiquetado como Power SW, que permitirá encender o apagar el computador según la intensidad y duración con la que presionemos el botón.
+
+EI botón de reinicio se suele usar cuando el computador se detiene o bloquea y no responde las órdenes del usuario. Está conectado también a la placa base mediante un cable de dos hilos etiquetado como Reset SW.
+
+Otra de las características de este panel será el número de conectores USB que pueda tener y si dispone de conectores para salida de audio y entrada para micrófono en el frontal del gabinete.
+
+
+#### Las bahías para unidades
+
+Las bahías para unidades se utilizan para montar unidades de discos flexibles, discos duros, unidades de tarjeta (SD, miniSD, Memory Stick, etc.), CDROM, DVD en el computador. Hay dos tipos: las bahías para unidad internas, que están situadas completamente en el interior de la caja sin salida al exterior y que se emplean para montar unidades como discos duros (que no necesitan un acceso desde fuera del tipo), y las bahías para unidades externas o exteriores, que realmente están situadas dentro del chasis, pero permiten el acceso a ellas desde el exterior. Se utilizan normalmente para las unidades de discos CD-ROM, DVD y similares.
+
+#### Tamaños de Carcasas
+
+El tamaño de las carcasas viene dado por el factor de forma de la placa base. Sin embargo el factor de forma solo especifica el tamaño interno de la caja.
+
+=== "Barebone"
+    <figure markdown>
+      ![Redes](media/01-barebone.png){ width="300" }
+      <figcaption>Barebone</figcaption>
+    </figure>
+
+    Gabinetes de pequeño tamaño cuya función principal es la de ocupar menor espacio y crea un diseño más agradable. Son útiles para personas que quieran dar buena impresión como una persona que tenga un despacho en el que reciba a mucha gente. Los barebone tienen el problema de que la expansión es complicada debido a que admite pocos (o ningún) dispositivos. Otro punto en contra es el calentamiento al ser de tamaño reducido aunque para una persona que no exija mucho trabajo al computador puede estar bien. Este tipo de cajas tienen muchos puertos USB para compensar la falta de dispositivos, como una disquetera (ya obsoleta), para poder conectar dispositivos externos como un disco USB o una memoria.
+
+=== "Minitorre"
+    <figure markdown>
+      ![Redes](media/01-mini-torre.png){ width="300" }
+      <figcaption>Minitorre</figcaption>
+    </figure>
+
+    Dispone de una o dos bahías de 5 ¼ y dos o tres bahías de 3 ½. Dependiendo de la placa base se pueden colocar bastantes tarjetas. No suelen tener problema con los USB y se venden bastantes modelos de este tipo de torre ya que es pequeña y a su vez hace las paces con la expansión. Su calentamiento es normal y no tiene el problema de los barebone.
+
+=== "Sobremesa"
+    <figure markdown>
+      ![Redes](media/01-sobremesa.png){ width="300" }
+      <figcaption>Sobremesa</figcaption>
+    </figure>
+
+    No se diferencian mucho de las minitorres, a excepción de que en lugar de estar en vertical se colocan en horizontal sobre el escritorio. Antes se usaban mucho, pero ahora están cada vez más en desuso. Se solía colocar sobre ella el monitor.
+
+=== "Semitorre"
+    <figure markdown>
+      ![Redes](media/01-semitorre.png){ width="300" }
+      <figcaption>Semitorre</figcaption>
+    </figure>
+
+    La diferencia de ésta es que aumenta su tamaño para poder colocar más dispositivos. Normalmente son de 4 bahías de 5 ¼ y 4 de 3 ½ y un gran número de huecos para poder colocar tarjetas y demás aunque esto depende siempre de la placa base.
+
+=== "Torre"
+    <figure markdown>
+      ![Redes](media/01-torre.png){ width="300" }
+      <figcaption>Torre</figcaption>
+    </figure>
+
+    Es el más grande. Puedes colocar una gran cantidad de dispositivos y es usado cuando se precisa una gran cantidad de dispositivos.
+
+=== "Servidor"
+    <figure markdown>
+      ![Redes](media/01-servidor.png){ width="300" }
+      <figcaption>Servidor</figcaption>
+    </figure>
+
+    Suelen ser gabinetes más anchos que los otros y de una estética inexistente debido a que van destinadas a lugares en los que no hay mucho tránsito de clientes como es un centro de procesamiento de datos. Su diseño está basado en la eficiencia donde los periféricos no son la mayor prioridad sino el rendimiento y la ventilación. Suelen tener más de una fuente de alimentación de extracción en caliente para que siga funcionando el servidor en el caso de que se estropee una de las dos y normalmente están conectados a un SAI que protege a los equipos de los picos de tensión y consigue que en caso de caída de la red eléctrica el servidor siga funcionando por un tiempo limitado.
+
+=== "Rack"
+    <figure markdown>
+      ![Redes](media/01-rack.png){ width="300" }
+      <figcaption>Rack</figcaption>
+    </figure>
+
+    Son otro tipo de servidores. Normalmente están dedicados y tienen una potencia superior que cualquier otro computador. Los servidores rack se atornillan a un mueble que tiene una medida especial: la "U". Una "U" es el ancho de una ranura del mueble. Este tipo de servidores suele colocarse en salas climatizadas debido a la temperatura que alcanza.
+
+
+### ✨ Fuente de alimentación
 
 <figure markdown>
   ![Redes](media/01-fuente.png){ width="600" }
@@ -374,12 +466,107 @@ Por un lado, tenemos un cable que viene del enchufe de nuestra casa y se conecta
 !!! INFO "Dato importante"
     Como norma general, las fuentes de alimentación vienen con un ventilador, instalado en la parte donde conectamos el cable de electricidad, que hace la función de enfriar la propia fuente para que no se sobrecaliente
 
+Existen varios tipos de fuentes de alimentación, cada uno con sus características distintas en cuestión de conexiones, voltaje, ventilación, tamaño y demás. En función de lo que nuestro equipo necesite, elegiremos un tipo de fuente de alimentación u otra.
 
 
+### 🌌 Placa Base
 
+<figure markdown>
+  ![Redes](media/01-placa-base.png){ width="200" }
+</figure>
 
+La placa base, también conocida como placa madre o tarjeta madre (del inglés motherboard o mainboard) es una tarjeta de circuito impreso a la que se conectan los componentes que constituyen la computadora.
 
+Es una parte fundamental a la hora de armar un PC de escritorio o servidor. Tiene instalados una serie de circuitos integrados, entre los que se encuentra el chipset, que sirve como centro de conexión entre el microprocesador, la RAM, las ranuras de expansión y otros dispositivos.
 
+!!! WARNING
+    La elección de la placa base (tipo, tamaño) marcará el resultado del computador pues por una parte puede aumentar o disminuir el coste del producto y también puede tener más prestaciones o simplemente no tenerlas.
+    
+    Por ejemplo, si elegimos una placa base barata (generalmente de pequeño tamaño), tendrá muy pocos conectores y puede resultar inapropiada al intentar ampliar con tarjetas de expansión; sin embargo, si elegimos una placa base grande (generalmente cara), tendrá muchas prestaciones que a lo peor no usamos en toda su vida útil y además, nos ocupará más espacio.
+
+Va instalada dentro de una caja o gabinete que por lo general está hecha de chapa y tiene un panel para conectar dispositivos externos y muchos conectores internos y zócalos para instalar componentes dentro de la caja.
+
+La placa base, además, incluye un firmware llamado BIOS, que le permite realizar las funcionalidades básicas, como pruebas de los dispositivos, vídeo y manejo del teclado, reconocimiento de dispositivos y carga del sistema operativo.
+
+=== "ATX"
+    <figure markdown>
+      ![Redes](media/01-atx.png){ width="200" }
+    </figure>
+
+    Uno o varios conectores de alimentación ATX: por estos conectores, una alimentación eléctrica proporciona a la placa base los diferentes voltajes e intensidades necesarios para su funcionamiento.
+
+=== "Zócalo CPU"
+    <figure markdown>
+      ![Redes](media/01-zocalo.png){ width="200" }
+    </figure>
+
+    El zócalo de CPU es un receptáculo que recibe el microprocesador y lo conecta con el resto de componentes a través de la placa base.
+
+=== "RAM"
+    <figure markdown>
+      ![Redes](media/01-ram.png){ width="200" }
+    </figure>
+    Las ranuras de memoria RAM, en número de 2 a 6 en las placas base comunes
+
+=== "Chipset"
+    <figure markdown>
+      ![Redes](media/01-chipset.png){ width="200" }
+    </figure>
+    Una serie de circuitos electrónicos, que gestionan las transferencias de datos entre los diferentes componentes de la computadora (procesador, memoria, tarjeta gráfica, unidad de almacenamiento secundario, etc.)
+
+=== "Reloj"
+    <figure markdown>
+      ![Redes](media/01-reloj.png){ width="200" }
+    </figure>
+    Regula la velocidad de ejecución de las instrucciones del microprocesador y de los periféricos internos.
+
+=== "CMOS"
+    <figure markdown>
+      ![Redes](media/01-cmos.png){ width="200" }
+    </figure>
+    Una pequeña memoria que preserva cierta información importante (como la configuración del equipo, fecha y hora), mientras el equipo no está alimentado por electricidad.
+
+=== "Pila"
+    <figure markdown>
+      ![Redes](media/01-pila.png){ width="200" }
+    </figure>
+    Proporciona la electricidad necesaria para operar el circuito constantemente y que éste último no se apague perdiendo la serie de configuraciones guardadas.
+
+=== "BIOS"
+    <figure markdown>
+      ![Redes](media/01-bios.png){ width="200" }
+    </figure>
+    Un programa registrado en una memoria no volátil, se emplean memorias flash.
+
+    !!! DANGER "CUIDADO"
+        No confundir con la configuración de la BIOS que SI QUE ÉS VOLÁTIL
+
+=== "BUS"
+    Conecta el microprocesador al chipset
+
+    - El BUS de memoria: Conecta el _chipset_ a la memoria temporal
+    - El BUS de expansión: (también llamado bus I/O) une el microprocesador a los conectores entrada/salida y a las ranuras de expansión.
+
+=== "I/O Entrada Salida"
+    <figure markdown>
+      ![Redes](media/01-io.png){ width="200" }
+    </figure>
+    Diferenciamos diferentes puertos en una placa base:
+
+    - Los puertos PS2 para conectar el teclado o el ratón, estas interfaces tienden a desaparecer a favor del USB
+    - Los puerto serie, por ejemplo para conectar dispositivos antiguos.
+    - Los puerto paralelo, por ejemplo para la conexión de antiguas impresoras.
+    - Los puertos USB, por ejemplo para conectar periféricos recientes.
+    - Los conectores RJ45, para conectarse a una red informática.
+    - Los conectores VGA, DVI, HDMI para la conexión del monitor de la computadora.
+    - Los conectores PATA o SATA, para conectar dispositivos de almacenamiento, tales como unidad de disco duro|discos duros, unidades de estado sólido y Unidad de disco óptico.
+    - Los conectores de audio, para conectar dispositivos de audio, tales como altavoces o micrófonos.
+
+=== "Ranuras de expansión"
+    <figure markdown>
+      ![Redes](media/01-pci.png){ width="200" }
+    </figure>
+    Se trata de receptáculos que pueden acoger tarjetas de expansión
 
 
 
@@ -405,10 +592,10 @@ Por un lado, tenemos un cable que viene del enchufe de nuestra casa y se conecta
 
 8. ❎ ¿Para qué sirve la pila de la BIOS?, ¿Qué sucede cuando ésta deja de funcionar?, ¿en los nuevos computadores ocurre lo mismo cuando deja de funcionar?.
 
-9. Existen muchos tipos de licencias de software . ¿Qué es una EULA?. Enumera los derechos y deberes de los tipos de licencias: GPL, Freeware, Shareware, privativa.
+9. ❎ Existen muchos tipos de licencias de software . ¿Qué es una EULA?. Enumera los derechos y deberes de los tipos de licencias: GPL, Freeware, Shareware, privativa.
 
-10. Hay otro tipo de placas base de uso empresarial que funcionan con dos o más procesadores en una misma placa base son del tipo asimétrico. Localiza una de ellas y enumera las características, precio, ventajas y desventajas y una foto o diagrama.
+10. ❎ Hay otro tipo de placas base de uso empresarial que funcionan con dos o más procesadores en una misma placa base son del tipo asimétrico. Localiza una de ellas y enumera las características, precio, ventajas y desventajas y una foto o diagrama.
 
-11. Explica qué es el POST y para qué sirve. ¿Qué significan dichas siglas y cuando se ejecuta?, ¿solo lo realizan los computadores?.
+11. ❎ Explica qué es el POST y para qué sirve. ¿Qué significan dichas siglas y cuando se ejecuta?, ¿solo lo realizan los computadores?.
 
-12. Identifica los distintos conectores que se muestran en la fotografía de **La fuente de alimentación** y ponlos en un documentos enumerados del 1 al 8 tal y como salen en la foto. Busca información en Internet para realizar el ejercicio.
+12. ❎ Identifica los distintos conectores que se muestran en la fotografía de **La fuente de alimentación** y ponlos en un documentos enumerados del 1 al 8 tal y como salen en la foto. Busca información en Internet para realizar el ejercicio.

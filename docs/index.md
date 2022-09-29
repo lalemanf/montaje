@@ -23,9 +23,9 @@ En esta asignatura veremos las tripas a los ordenadores, como funcionan por dent
     - Se han seguido las instrucciones recibidas
 
     ??? QUESTION "Desglose"
-        - Elementos básicos: Pilas y baterías, pulsadores, interruptores, fuentes de alimentación, resistencias, condensadores, diodos, transistores, led, entre otros
+        - ❎ Elementos básicos: Pilas y baterías, pulsadores, interruptores, fuentes de alimentación, resistencias, condensadores, diodos, transistores, led, entre otros
         - Herramientas utilizadas en los procedimientos de montaje de componentes y periféricos informáticos
-        - Unidades funcionales de un sistema informático
+        - ❎ Unidades funcionales de un sistema informático
         - Componentes de los sistemas microinformáticos: tipos de carcasas, fuentes de alimentación, ventiladores y disipadores de calor
         - La placa base Microprocesadores, zócalos y tipos Memorias RAM, características y formatos
         - Buses y conectores de datos
