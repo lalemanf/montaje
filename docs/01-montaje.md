@@ -599,3 +599,23 @@ La placa base, además, incluye un firmware llamado BIOS, que le permite realiza
 11. ❎ Explica qué es el POST y para qué sirve. ¿Qué significan dichas siglas y cuando se ejecuta?, ¿solo lo realizan los computadores?.
 
 12. ❎ Identifica los distintos conectores que se muestran en la fotografía de **La fuente de alimentación** y ponlos en un documentos enumerados del 1 al 8 tal y como salen en la foto. Busca información en Internet para realizar el ejercicio.
+
+13. ❎ Busca por Internet 1 dispositivo por cada uno de los tamaños de carcasas que hemos visto y haz lo siguiente:
+
+        Precio total
+        Tarjeta gráfica (características)
+        Número de puertos USB y su versión (2.0 3.0 ...)
+        Tipo de salida de video
+        Tipo de salida de audio
+        Tamaño Memoria RAM (en Gigas)
+        Tipo de almacenamiento y tamaño (en Gigas)
+        Modelo de la placa base
+
+    En el caso del Rack, pon lo siguiente:
+   
+        Precio total
+        ¿Cuantas bahías tiene?
+   
+    Adjunta una foto 📸 por cada uno de los productos listados.
+
+    Envía dicho documento como PDF a través de Aules.
