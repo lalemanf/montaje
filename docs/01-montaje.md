@@ -38,6 +38,21 @@ El objetivo de este tema es servir de introducción al resto de contenidos de es
 ??? INFO "Volátil"
     Es una propiedad de inconsistencia que tienen algunos dispositivos a perder la información almacenada en ellos cuando se deja de suministrar energía eléctrica. Se aplica a la memoria RAM.
 
+??? INFO "Acceso Aleatorio"
+    Es el acceso a un dato directamente, sin un coste extra por posición. Por analogía, sería como elegir una manzana de un cajón.
+
+??? INFO "Acceso Secuencial"
+    Acceso secuencial significa que un grupo de elementos es accedido en un predeterminado orden secuencial, uno detrás de otro. Por analogía, sería como avanzar una película para buscar un fotograma determinado de ella.
+
+??? INFO "Buffer"
+    Es una ubicación de la memoria en un disco, reservada para el almacenamiento temporal de información digital, mientras que espera ser procesada.
+
+??? INFO "Cifrar"
+    Es hacer ininteligibles a intrusos (lectores no autorizados) los mensajes o ficheros. Hay cierta confusión con «encriptar» pero esta palabra es un anglicismo, es completamente preferible el uso de «cifrar».
+
+??? INFO "RPM"
+    Son las **R**evoluciones **P**or **M**inuto, es una unidad de frecuencia.
+
 ## 💻 Sistema informático
 
 <figure markdown>
