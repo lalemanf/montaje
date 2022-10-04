@@ -24,15 +24,15 @@ En esta asignatura veremos las tripas a los ordenadores, como funcionan por dent
 
     ??? QUESTION "Desglose"
         - ❎ Elementos básicos: Pilas y baterías, pulsadores, interruptores, fuentes de alimentación, resistencias, condensadores, diodos, transistores, led, entre otros
-        - Herramientas utilizadas en los procedimientos de montaje de componentes y periféricos informáticos
+        - ❎ Herramientas utilizadas en los procedimientos de montaje de componentes y periféricos informáticos
         - ❎ Unidades funcionales de un sistema informático
-        - Componentes de los sistemas microinformáticos: tipos de carcasas, fuentes de alimentación, ventiladores y disipadores de calor
+        - ❎ Componentes de los sistemas microinformáticos: tipos de carcasas, fuentes de alimentación, ventiladores y disipadores de calor
         - La placa base Microprocesadores, zócalos y tipos Memorias RAM, características y formatos
         - Buses y conectores de datos
-        - Cableado y conectores de potencia
-        - Zócalos y bahías de expansión
+        - ❎ Cableado y conectores de potencia
+        - ❎ Zócalos y bahías de expansión
         - Dispositivos de almacenamiento: discos duros, características y tipos; Lectores/grabadores ópticos y magneto-ópticos, características y tipos
-        - Puertos: paralelo, serie, USB (Bus de Serie Universal), «Firewire» (IEEE 1394), entre otros
+        - ❎ Puertos: paralelo, serie, USB (Bus de Serie Universal), «Firewire» (IEEE 1394), entre otros
         - Seguridad en el uso de herramientas y componentes eléctricos y electrónicos
         - Seguridad eléctrica: medidas de prevención de riesgos eléctricos; daños producidos por descarga eléctrica
 

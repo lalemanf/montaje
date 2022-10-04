@@ -551,6 +551,7 @@ La placa base, además, incluye un firmware llamado BIOS, que le permite realiza
     <figure markdown>
       ![Redes](media/01-io.png){ width="200" }
     </figure>
+
     Diferenciamos diferentes puertos en una placa base:
 
     - Los puertos PS2 para conectar el teclado o el ratón, estas interfaces tienden a desaparecer a favor del USB
@@ -567,6 +568,217 @@ La placa base, además, incluye un firmware llamado BIOS, que le permite realiza
       ![Redes](media/01-pci.png){ width="200" }
     </figure>
     Se trata de receptáculos que pueden acoger tarjetas de expansión
+
+
+### 💽 Discos de almacenamiento
+
+<figure markdown>
+  ![Discos](media/01-discos.png){ width="250" }
+</figure>
+
+A lo largo de la historia de la informática el almacenamiento ha ido variando en su tamaño y forma, del mismo modo que los soportes para guardar dicha información. Veamosa continuación los soportes más importantes y sus características.
+
+#### 💾 Almacenamiento magnético
+
+El almacenamiento magnético es una técnica que consiste en la aplicación de campos magnéticos a ciertos materiales capaces de reaccionar frente a esta influencia y orientarse en unas determinadas posiciones manteniéndolas hasta después de dejar de aplicar el campo magnético. Ejemplo: disco duro, cinta magnética.
+
+##### Disco Duro (HDD)
+
+Un disco duro (en inglés **H**ard **D**isk **D**rive) es un dispositivo de almacenamiento de datos no volátil que emplea un sistema de grabación magnética para almacenar datos digitales. Se compone de uno o más platos o discos rígidos, unidos por un mismo eje que gira a gran velocidad dentro de una caja metálica sellada no herméticamente. Sobre cada plato, y en cada una de sus caras, se sitúa un cabezal de lectura/escritura que flota sobre una delgada lámina de aire generada por la rotación de los discos.
+
+=== "Disco Duro"
+    <figure markdown>
+      ![Redes](media/01-hd.png){ width="250" }
+    </figure>
+
+    Dentro de un disco duro hay uno o varios discos (de aluminio o cristal) concéntricos llamados platos (normalmente entre 2 y 4), y que giran todos a la vez sobre el mismo eje, al que están unidos. El peine está formado por un conjunto de brazos paralelos a los platos, alineados verticalmente ( en forma de peine) y que también se desplazan de forma simultánea, en cuya punta están las cabezas de lectura/escritura. Por norma general, hay una cabeza de lectura/escritura para cada superficie de cada plato. Los cabezales se mueven hacia el interior o el exterior de los platos, lo cual combinado con la rotación de los mismos permite que los cabezales puedan alcanzar cualquier posición de la superficie de los platos.
+
+=== "Detalle"
+    <figure markdown>
+      ![Redes](media/01-hd-cabezal.png){ width="250" }
+      <figcaption>Vista de un peine con 3 brazos</figcaption>
+    </figure>
+
+    Es necesaria una cabeza de lectura/escritura para cada cara. Si observas el dibujo Cilindro-Cabeza-Sector de la izquierda, a primera vista se ven 4 brazos, uno para cada plato. Cada brazo tiene 2 cabezas: una para leer la cara superior del plato, y otra para leer la cara inferior. Por tanto, hay 8 cabezas para leer 4 platos. Las cabezas de lectura/escritura nunca tocan el disco, sino que pasan muy cerca (hasta a 3 nanómetros), debido a una finísima película de aire generada por el plato al girar. Si alguna de las cabezas llega a tocar una superficie de un plato, causaría muchos daños en él, rayándolo gravemente, debido a lo rápido que giran los platos (uno de 7.200 revoluciones por minuto se mueve a 129 km/h).
+
+=== "Secciones"
+    <figure markdown>
+      ![Redes](media/01-hd-cabezal-detalle.png){ width="250" }
+      <figcaption>un peine, 3 brazos, 6 cabezas, 3 platos</figcaption>
+    </figure>
+
+    Hay varios conceptos para referirse a zonas del disco:
+
+    - **Plato**: cada uno de los discos que hay dentro del disco duro.
+    - **Cara**: cada uno de los dos lados de un plato
+    - **Cabeza**: número de cabezales.
+    - **Pistas**: una circunferencia dentro de una cara; la pista 0 está en el borde exterior.
+    - **Cilindro**: conjunto de varias pistas; son todas las circunferencias que están alineadas verticalmente (una de cada cara).
+    - **Sector**: cada una de las divisiones de una pista. Todos tienen el mismo tamaño. El tamaño estándar actual 4096 bytes.
+    - **Clúster**: es un conjunto contiguo de sectores de un disco.
+    - **Sector geométrico**: es un conjunto de sectores de pistas continuas (si el plato fuera una pizza, el sector geométrico sería una porción)
+
+=== "Características"
+    <figure markdown>
+      ![Redes](media/01-hd-caracteristicas.png){ width="250" }
+      <figcaption>Componentes de un disco duro. De izquierda a derecha, fila superior: tapa, carcasa, plato, eje; fila inferior: espuma aislante, circuito impreso, cabezal de lectura~escritura, actuador e imán, tornillos.</figcaption>
+    </figure>
+
+
+    Las características que se deben tener en cuenta en un disco duro son:
+
+    - **Tiempo medio de búsqueda (milisegundos)**: Tiempo medio que tarda la cabeza en situarse en la pista deseada; es la mitad del tiempo empleado por la cabeza en ir desde la pista más periférica hasta la más central del disco.
+
+    - **Velocidad de rotación (RPM)**: Revoluciones por minuto de los platos. A mayor velocidad de rotación, menor latencia media.
+
+    - **Latencia media (milisegundos)**: Tiempo medio que tarda la cabeza en situarse en el sector deseado; es la mitad del tiempo empleado en una rotación completa del disco.
+
+    - **Tiempo medio de acceso(milisegundos)**: es la suma del Tiempo medio de búsqueda (situarse en la pista) + la Latencia media (situarse en el sector).
+
+    - **Tasa de transferencia (MB/s)**: Velocidad a la que el disco puede transferir la información a la computadora una vez que el cabezal está situado en la pista y sector correctos. Puede ser velocidad sostenida o de pico (a través del buffer).
+        - **Tasa de transferencia de lectura**, en este caso se trata de la velocidad a la que transfiere un fichero desde el disco magnético a cualquier programa. Por ejemplo: ver una película alojada en un disco magnético.
+        
+        - **Tasa de transferencia de escritura**, en este caso se trata de la velocidad a la que transfiere un fichero desde cualquier programa al disco magnético. En este caso, suele ser más baja puesto que después de escribir los datos, se suelen comprobar si están bien escritos. Por ejemplo: al guardar datos desde el Writer u otro programa al disco magnético.
+    
+    - **Tiempo de lectura/escritura**: Tiempo medio que tarda el disco en leer o escribir nueva información. Depende de la cantidad de información que se quiere leer o escribir.
+    
+    - **Buffer**: Es una memoria de tipo electrónico dentro del disco duro que almacena los datos recién leídos y/o escritos, reduce el uso del disco y las lecturas o escrituras repetitivas de datos y favorece la rapidez de acceso a los datos. Se puede aplicar la tecnología NCQ que permite a la unidad determinar el orden óptimo en que se debe recuperar las solicitudes pendientes.
+    
+    - **Interfaz**: Medio de comunicación entre el disco duro y la computadora. Según la interfaz y su versión, puede variar mucho la tasa de transferencia máxima del interfaz. Puede ser IDE/ATA, SCSI, SATA, USB, Firewire, Serial Attached SCSI.
+
+
+#### 💿 Almacenamiento óptico (CD ~ DVD)
+
+<figure markdown>
+  ![Redes](media/01-cd.png){ width="300" }
+</figure>
+
+Son aquellos dispositivos que son capaces de guardar datos por medio de un rayo láser en su superficie plástica, ya que se almacenan por medio de ranuras microscópicas quemadas. La información queda grabada en la superficie de manera física, por lo que solo el calor (puede producir deformaciones en la superficie del disco) y las ralladuras pueden producir la pérdida de los datos, en cambio es inmune a los campos magnéticos y la humedad.
+
+Los soportes ópticos siguen el sistema de archivos **UDF** (Universal Disk Format o formato de disco universal) y Joliet. Se adoptó este sistema de archivos para reemplazar al estándar ISO 9660, y su principal uso es la grabación o regrabación de discos.
+
+La lectura de un soporte óptico consiste en la conversión de los _lands_ y _pits_ a una información digital (ceros y unos). El elemento fundamental para la lectura de un soporte óptico es un láser de baja potencia, que emite radiación y que se enfoca hacia la parte inferior del CD. La luz atraviesa la capa de policarbonato e incide sobre la capa de aluminio. Si el haz incide sobre un hueco (_pit_), el porcentaje de luz reflejada es muy pequeño. Por el contrario, si el haz incide sobre una zona plana (_land_), un gran porcentaje de luz es reflejada. La radiación luminosa reflejada se dirige hacia un fotodetector que, en función de la intensidad de la luz recibida, puede detectar fácilmente si se ha enfocado un land o un pit.
+
+Un soporte óptico no contiene pistas concéntricas, como ocurría en los discos magnéticos. En cambio, el soporte óptico presenta una sola pista, que se dispone en forma de espiral, cubriendo toda el área de datos. La espiral comienza en la parte interior del disco, justo después del área interior. Esto se hace así para permitir recortar el radio del soporte óptico y poder obtener versiones más pequeñas.
+
+##### DVD
+
+=== "Historia"
+    <figure markdown>
+      ![Redes](media/01-dvd-logo.png){ width="200" }
+    </figure>
+
+    El DVD es un disco de almacenamiento de datos cuyo estándar surgió en 1995. Sus siglas corresponden con Digital Versatile Disc en inglés («disco versátil digital» traducido al español). En sus inicios, la v intermedia hacía referencia a video (digital videodisk), debido a su desarrollo como reemplazo del formato VHS para la distribución de vídeo a los hogares.
+
+=== "Métodos"
+    <figure markdown>
+      ![Redes](media/01-dvd-r.png){ width="200" }
+    </figure>
+
+    El nombre de este dispositivo hace referencia a la multitud de maneras en las que se almacenan los datos: DVD-ROM (dispositivo de lectura únicamente), DVD-R y DVD+R (solo pueden escribirse una vez), DVD-RW y DVD+RW (permiten grabar y luego borrar). También difieren en la capacidad de almacenamiento de cada uno de los tipos.
+
+=== "Capacidad"
+    <figure markdown>
+      ![Redes](media/01-dvd-rom.png){ width="200" }
+    </figure>
+
+    Los DVD se dividen en dos categorías: los de capa simple y los de doble capa. Además el disco puede tener una o dos caras, y una o dos capas de datos por cada cara; el número de caras y capas determina la capacidad del disco. Los formatos de dos caras apenas se utilizan fuera del ámbito de DVD-Video.
+
+    Los DVD de capa simple pueden guardar hasta 4,7 gigabytes (se lo conoce como DVD-5). Emplea un láser de lectura con una longitud de onda de 650 nm (en el caso de los CD, es de 780 nm) y una apertura numérica de 0,6 (frente a los 0,45 del CD), la resolución de lectura se incrementa en un factor de 1,65. Esto es aplicable en dos dimensiones.
+
+<center>
+  🎬 [Cómo se fabrican los CDs](https://www.youtube.com/watch?v=KOkIcK0XcTg){target="_blank"} 🎬
+</center>
+
+
+
+##### Blu-ray Disc (Blu-ray o BD)
+
+<figure markdown>
+  ![](media/01-bd.png){ width="200" }
+</figure>
+
+El Blu-ray es un formato de disco óptico de nueva generación, empleado para vídeo de alta definición y con una capacidad de almacenamiento de datos de alta densidad mayor que la del DVD.
+
+El disco Blu-ray tiene 12 cm de diámetro al igual que el CD y el DVD. Guardaba 25 GB por capa, por lo que Sony y Panasonic desarrollaron un nuevo índice de evaluación (i-MLSE) que permitiría ampliar un 33% la cantidad de datos almacenados, desde 25 a 33,4 GB por capa.
+
+El disco Blu-ray hace uso de un rayo láser de color azul con una longitud de onda de 405 nanómetros, a diferencia del láser rojo utilizado en lectores de DVD, que tiene una longitud de onda de 650 nanómetros. Esto, junto con otros avances tecnológicos, permite almacenar sustancialmente más información que el DVD en un disco de las mismas dimensiones y aspecto externo. Blu-ray obtiene su nombre del color azul del rayo láser (blue ray significa ‘rayo azul’). La letra e de la palabra original blue fue eliminada debido a que, en algunos países, no se puede registrar para un nombre comercial una palabra común.
+
+
+#### ✨ Almacenamiento Electrónico
+
+<figure markdown>
+  ![](media/01-ssd.png){ width="300" }
+</figure>
+
+Aquellos dispositivos que son capaces de guardar datos utilizando dispositivos electrónicos, generalmente chips del tipo NAND u otra tecnología. Al dejar de suministrar corriente eléctrica, sigue guardada la información.
+
+Casi la totalidad de los fabricantes comercializan sus SSD con memorias no volátiles NAND flash para desarrollar un dispositivo no sólo veloz y con una vasta capacidad, sino también robusto y a la vez lo más pequeño posible tanto para el mercado de consumo como el profesional. Al ser memorias no volátiles, no requieren ningún tipo de alimentación constante ni pilas para no perder los datos almacenados, incluso en apagones repentinos.
+
+=== "Celdas y su funcionamiento"
+    <figure markdown>
+      ![](media/01-ssd-funcionamiento.png){ width="300" }
+    </figure>
+
+    Las memorias flash NAND almacenan los datos en muchas celdas NAND mediante transistores de puerta flotante similares a un MOSFET.
+
+    Una sola celda flash NAND almacena un solo bit de datos en una unidad de estado sólido y continuará almacenando ese estado incluso después de que se haya eliminado la corriente eléctrica. Por tanto, al eliminar la corriente eléctrica de alimentación del dispositivo NAND no afecta el estado de la puerta flotante, por lo que mantiene los datos.
+
+    La carga eléctrica de una celda NAND se almacena en la puerta flotante que está aislada arriba y abajo por capas aislantes. Los electrones de la capa flotante son atraídos en el sentido en el que se aplica la tensión en las puertas del transistor. En una celda se pueden realizar las siguientes acciones:
+
+    - **Escribir**: al aplicar un mayor voltaje a la celda en la puerta de control, los electrones se mueven desde el sustrato de silicio a la puerta flotante. El sustrato se comporta como aislante al no tener electrones y no fluye corriente entre la puerta fuente y la puerta de drenado.
+
+    - **Borrar**: se aplica un mayor voltaje en el sustrato (sentido contrario) y los electrones van de la puerta flotante al sustrato. Por tanto el sustrato se comporta como conductor y fluye corriente entre la puerta fuente y la puerta de drenado.
+    Leer estado: se aplica un pequeño voltaje aplica voltaje a la puerta de control y se mide la corriente que fluye entre la fuente y el drenaje. Si no hay flujo de corriente, significa que la puerta flotante está cargada (binario 0). Si hay flujo de corriente, la puerta flotante no está cargada (binario 1).
+
+=== "Degradación de la celda"
+    <figure markdown>
+      ![](media/01-ssd-roto.png){ width="300" }
+    </figure>
+
+    La actividad eléctrica de borrado desgasta la capa aislante de la celda con el paso del tiempo. Por lo tanto, cada celda tiene un tiempo de vida finito, medido en ciclos de programado y borrado (P/E cycles) y el número de bits que almacena cada celda.
+    
+    Además el almacenamiento NAND requiere de unos procesos adicionales que realiza la controladora NVMe: detectar bloques defectuosos, recolector de basura y nivelación del desgaste de las celdas.
+
+
+##### SSD
+
+<figure markdown>
+  ![](media/01-ssd-2.png){ width="300" }
+</figure>
+
+Una unidad de estado sólido o SSD (acrónimo en inglés de solid-state drive) es un dispositivo de almacenamiento de datos que usa una memoria no volátil, como la memoria flash, o una memoria volátil como la SDRAM, para almacenar datos, en lugar de los platos giratorios magnéticos encontrados en los discos duros convencionales. En comparación con los discos duros tradicionales, las unidades de estado sólido son menos sensibles a los golpes, son prácticamente inaudibles y tienen un menor y constante tiempo de acceso y de latencia. Las SSD hacen uso de la misma interfaz que los discos duros y, por lo tanto, son fácilmente intercambiables sin tener que recurrir a adaptadores o tarjetas de expansión para compatibilizarlos con el equipo.
+
+=== "Información"
+    <figure markdown>
+      ![](media/01-ssd-nvme.png){ width="300" }
+    </figure>
+
+    Son comercializadas con las dimensiones heredadas de los discos duros, es decir, en 3,5 pulgadas, 2,5 pulgadas y 1,8 pulgadas, aunque también ciertas SSD vienen en formato «tarjeta de expansión».
+
+    En algunos casos, las SSD pueden ser más lentas que los discos duros, en especial con controladoras antiguas de gamas bajas, pero dado que los tiempos de acceso de una SSD son inapreciables, al final resultan más rápidos. Este tiempo de acceso tan corto se debe a la ausencia de piezas mecánicas móviles, inherentes a los discos duros.
+
+    Aunque técnicamente no son discos, a veces se traduce erróneamente en español la "D" de SSD como "disk" cuando, en realidad, representa la palabra "drive", que podría traducirse como unidad o dispositivo.
+
+    El rendimiento de las SSD se incrementan añadiendo chips NAND Flash en paralelo. Un sólo chip NAND Flash es relativamente lento, dado que la interfaz de entrada y salida es de 8 ó 16 bits y también por la latencia adicional de las operaciones básicas de E/S. Cuando varios dispositivos NAND operan en paralelo dentro de un SSD, las escalas de ancho de banda se incrementan y las latencias de alta se minimizan, siempre y cuando las operaciones se distribuyan uniformemente entre los chips.
+
+=== "Características"
+    <figure markdown>
+      ![](media/01-ssd-dentro.png){ width="300" }
+    </figure>
+
+    La SSD se compone principalmente de:
+
+    - **Controladora**: Es un procesador electrónico que se encarga de administrar, gestionar y unir los módulos de memoria NAND con los conectores en entrada y salida. Ejecuta software a nivel de firmware y es, con toda seguridad, el factor más determinante para las velocidades del dispositivo. Dos tipos:
+
+        - **SATA**
+
+        - **NVMe**, o Non-Volatile Memory es una especificación para el acceso a las unidades de estado sólido (SSD) conectadas a través del bus PCI Express o SATA Express. Aprovecha el paralelismo de acceso a los datos de los chips para incrementar la velocidad de transferencia de datos.
+
+    - **Buffer**: Un dispositivo SSD utiliza un pequeño dispositivo de memoria DRAM similar al caché de los discos duros. El directorio de la colocación de bloques y el desgaste de nivelación de datos también se mantiene en la memoria caché mientras la unidad está operativa.
+
+    - **Condensador**: Es necesario para mantener la integridad de los datos de la memoria caché, si la alimentación eléctrica se ha detenido inesperadamente, el tiempo suficiente para que se puedan enviar los datos retenidos hacia la memoria no volátil.
+
 
 
 
@@ -616,6 +828,14 @@ La placa base, además, incluye un firmware llamado BIOS, que le permite realiza
         Precio total
         ¿Cuantas bahías tiene?
    
-    Adjunta una foto 📸 por cada uno de los productos listados.
+    📸 Adjunta una foto por cada uno de los productos listados.
 
-    Envía dicho documento como PDF a través de Aules.
+    📨 Envía dicho documento como PDF a través de Aules.
+
+14. Investiga en la red qué tipos de formatos CD son los siguientes: CD-i, CDROM-XA, Photo CD, CD Extra, Video CD y Super Video CD.
+
+15. Investiga si es posible instalar un sistema operativo en una partición lógica. ¿Qué es una partición lógica? ¿Qué sistemas operativos permiten esto? ¿Es posible tener infinitas particiones en un disco de almacenamiento?
+
+16. ¿Qué es un _head crash_ en un disco duro?
+
+17. Compara de un disco duro con un _SSD_: precio, capacidades máximas, tiempo de acceso, tasas de escritura y lectura.
