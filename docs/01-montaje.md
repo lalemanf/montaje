@@ -854,3 +854,12 @@ Una unidad de estado sólido o SSD (acrónimo en inglés de solid-state drive) e
 16. ¿Qué es un _head crash_ en un disco duro?
 
 17. Compara de un disco duro con un _SSD_: precio, capacidades máximas, tiempo de acceso, tasas de escritura y lectura.
+
+18. Hablando de disquetes y discos blandos, investiga en Internet sobre:
+
+    - Su historia
+    - Características técnicas
+    - Características físicas
+    - ¿Se sigue usando?
+    - ¿Cómo puedo conectar una disquetera a un portátil? Dibuja un esquema de cómo hacerlo, explicando qué interfas necesita para funcionar
+    - ¿La disquetera tiene Firmware?
