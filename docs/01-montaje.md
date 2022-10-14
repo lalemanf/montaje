@@ -861,5 +861,5 @@ Una unidad de estado sólido o SSD (acrónimo en inglés de solid-state drive) e
     - Características técnicas
     - Características físicas
     - ¿Se sigue usando?
-    - ¿Cómo puedo conectar una disquetera a un portátil? Dibuja un esquema de cómo hacerlo, explicando qué interfas necesita para funcionar
+    - ¿Cómo puedo conectar una disquetera a un portátil? Dibuja un esquema de cómo hacerlo, explicando qué interfaz necesita para funcionar
     - ¿La disquetera tiene Firmware?
