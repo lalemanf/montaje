@@ -22,7 +22,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#ensamblaje">
+<a class="md-skip" href="#ensamblaje-de-componentes-seguridad-y-documentacion-tecnica">
           Saltar a contenido
         </a>
 </div>
@@ -120,9 +120,74 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Tema 2 - Ensamblaje de componentes hardware de un equipo microinformático
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         Tema 2 - Ensamblaje de componentes hardware de un equipo microinformático
       </a>
+<nav aria-label="Tabla de contenidos" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vocabulario">
+    📒 Vocabulario
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#documentacion-tecnica">
+    📃 Documentación técnica
+  </a>
+<nav aria-label="📃 Documentación técnica" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#buscando-documentacion-tecnica">
+    🔎 Buscando documentación técnica
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#entendiendo-documentacion-tecnica">
+    🤯 Entendiendo documentación técnica
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#manipulando-equipos">
+    🤹 Manipulando equipos
+  </a>
+<nav aria-label="🤹 Manipulando equipos" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#entorno-o-espacio-de-trabajo">
+    🌳 Entorno o espacio de trabajo
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prevencion-de-riesgos-al-manipular-equipos">
+    ⚠️ Prevención de riesgos al manipular equipos
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#herramientas-necesarias">
+    🪛 Herramientas necesarias
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ejercicios">
+    🧰 EJERCICIOS
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../03-sistemas/">
@@ -151,7 +216,77 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="ensamblaje">Ensamblaje</h1>
+<h1 id="ensamblaje-de-componentes-seguridad-y-documentacion-tecnica">Ensamblaje de componentes, seguridad y documentación técnica</h1>
+<p>En este tema vamos a aprender cómo montar y desmontar ordenadores, así como a intentar reparar los fallos de hardware que puedan ir surgiendo en los experimentos.</p>
+<p>También veremos una de las partes más importantes a la hora de manipular ordenadores, la seguridad.</p>
+<p>Cuando termines el tema, seremos capaces de reconocer cualquier componente de un PC y tendremos la habilidad de sustituir cualquier aparato electrónico dentro de un ordenador o periférico.</p>
+<p>Por último, seremos capaces de encontrar la documentación de cada uno de los dispositivos para poder seguir las instrucciones del fabricante.</p>
+<h2 id="vocabulario">📒 Vocabulario</h2>
+<details class="info">
+<summary>Control PWM</summary>
+<p>es un control de velocidad del ventilador por medio de impulsos. Es utilizado para controlar la velocidad del ventilador del procesador evitando un mayor desgaste de los rodamientos y un mayor ruido</p>
+</details>
+<details class="info">
+<summary>Fanbus</summary>
+<p>es un concentrador o hub (en inglés) en el que se pueden conectar varios ventiladores. Se utiliza cuando en la placa base tiene un menor número de conexiones que las necesitadas</p>
+</details>
+<details class="info">
+<summary>Heat-pipe</summary>
+<p>es un sistema de refrigeración aplicada en casi todos los disipadores de alto rendimiento. Se basa en un tubo de cobre hueco por el que circula un líquido que se evapora en las zonas más calientes (absorbiendo el calor) y licuándose en las zonas más frías (expulsando el calor)</p>
+</details>
+<details class="info">
+<summary>Poka-yoke (sistema a prueba de tontos)</summary>
+<p>es una técnica de calidad que se aplica con el fin de evitar errores en la operación de un sistema. Se utiliza en casi todos los conectores de la placa base para evitar conexionado erróneo. Se empezó a utilizar en Toyota (1960)</p>
+</details>
+<details class="info">
+<summary>Slot</summary>
+<p>es un conector o puerto de expansión de la placa base. Permite conectar en él tarjetas de expansión</p>
+</details>
+<details class="info">
+<summary>Socket o zócalo</summary>
+<p>es un pequeño pedestal donde se inserta el procesador en la placa base. Para evitar confusiones, solo se puede conectar al procesador con una posición</p>
+</details>
+<details class="info">
+<summary>Termoconductor</summary>
+<p>es un material, generalmente metálico, que permite el traspaso de calor por él</p>
+</details>
+<h2 id="documentacion-tecnica">📃 Documentación técnica</h2>
+<figure>
+<p><a class="glightbox" href="../media/02-documentacion.png"><img alt="" src="../media/02-documentacion.png" width="400"/></a>
+</p>
+<figcaption></figcaption>
+</figure>
+<p>Todos los aparatos o componentes electrónicos de un ordenador disponen de un manual de usuario o documentación técnica.</p>
+<p>En dicha documentación se especifican las características técnicas del aparato y cómo debe usarse para garantizar una correcta funcionalidad del dispositivo.</p>
+<p>Antiguamente podíamos encotrar libretos impresos con las instrucciones o manual de usuario dentro de las cajas de los propios componentes. Cuando ibas a una tienda a comprar una tarjeta gráfica nueva, ésta venía dentro de una caja de cartón, con un disquet o CD-ROM que contenía tanto los drivers para varios sistemas operativos así como el manual de usuario y software para poder leer la documentación que solía venir en formato PDF o <strong>RTF</strong> (texto enriquecido)</p>
+<figure>
+<p><a class="glightbox" href="../media/02-voodoo.png"><img alt="" src="../media/02-voodoo.png" width="300"/></a>
+</p>
+<figcaption>Tarjeta gráfica Voodoo 3 ~ 16MB</figcaption>
+</figure>
+<h3 id="buscando-documentacion-tecnica">🔎 Buscando documentación técnica</h3>
+<h3 id="entendiendo-documentacion-tecnica">🤯 Entendiendo documentación técnica</h3>
+<h2 id="manipulando-equipos">🤹 Manipulando equipos</h2>
+<h3 id="entorno-o-espacio-de-trabajo">🌳 Entorno o espacio de trabajo</h3>
+<h3 id="prevencion-de-riesgos-al-manipular-equipos">⚠️ Prevención de riesgos al manipular equipos</h3>
+<h3 id="herramientas-necesarias">🪛 Herramientas necesarias</h3>
+<h2 id="ejercicios">🧰 EJERCICIOS</h2>
+<p>1.- ❎ A través del programa  "Info center" de tu ordenador Lliurex, averigua la marca y el modelo de placa base que tiene el PC que estás usando y además describe lo siguiente</p>
+<ul>
+<li>Fabricante</li>
+<li>Modelo de PC</li>
+<li>Marca de la placa base</li>
+<li>Modelo de la placa base</li>
+<li>Adjunta el manual de usuario del PC en PDF</li>
+<li>Enumera todas las ranuras y zócalos que aparecen en el manual de usuario sobre la placa base (PCI, CPU, RAM [ Ranuras, máxima capacidad, Tipo de memoria, voltaje ])</li>
+<li>¿Tiene interfaz IDE y SATA? ¿Cuántas?</li>
+<li>Interfaces soldadas en la placa base (audio, display port, vga...)</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Cuidado</p>
+<p>Adjunta capturas de pantalla con el modelo de la placa base y detalla cada uno de los elementos que existen en ella, enumerándolos y descríbelos abajo de la imagen.</p>
+<p>Sube a aules tanto el PDF del manual de usuario como el PDF de tus respuestas.</p>
+</div>
 </article>
 </div>
 </div>
