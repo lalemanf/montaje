@@ -449,3 +449,12 @@ Las descargas electrostáticas (ESD), las fuentes de alimentación en mal estado
 - Puerto Paralelo
 
 Puedes valerte de una imagen de algún PC de alguna tienda online como guía.
+
+3.- ❎ Identifica que tipo de dispositivos podemos conectar en función de la placa base:
+
+- Memoria RAM (tipo, max. ranuras, max. GB)
+- Procesador (tipo y rango de procesadores)
+- Almacenamiento (Magnético, óptico y electrónico, INTERFACES)
+- Tarjeta gráfica ¿hay integrada, características?
+
+¿Qué puedo conectar en las interfaces PCI_E 1, 3, 4, 6
