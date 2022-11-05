@@ -13,26 +13,26 @@ En esta asignatura veremos las tripas a los ordenadores, como funcionan por dent
 </figure>
 
 !!! NOTE "Tema 1 ~ MONTAJE Y MANTENIMIENTO DE SISTEMAS INFORMÁTICOS"
-    - Se han descrito las operaciones y comprobaciones previas a la manipulación segura de componentes eléctricos y/o electrónicos
-    - Se han identificado los dispositivos y herramientas necesarios en la manipulación segura de sistemas electrónicos
-    - Se han seleccionado las herramientas necesarias para el procedimiento de montaje, sustitución o conexión de componentes hardware de un sistema microinformático
-    - Se han identificado funcionalmente los componentes hardware para el ensamblado y/o mantenimiento de un equipo microinformático
-    - Se han descrito las características técnicas de cada uno de los componentes hardware (internos y externos) utilizados en el montaje y/o mantenimiento de un equipo microinformático
-    - Se han localizado los bloques funcionales en placas bases utilizadas en los sistemas microinformáticos
-    - Se han identificado los tipos de puertos, bahías internas y cables de conexión (de datos y eléctricos, entre otros) existentes de un equipo microinformático
-    - Se han seguido las instrucciones recibidas
+    - ❎ Se han descrito las operaciones y comprobaciones previas a la manipulación segura de componentes eléctricos y/o electrónicos
+    - ❎ Se han identificado los dispositivos y herramientas necesarios en la manipulación segura de sistemas electrónicos
+    - ❎ Se han seleccionado las herramientas necesarias para el procedimiento de montaje, sustitución o conexión de componentes hardware de un sistema microinformático
+    - ❎ Se han identificado funcionalmente los componentes hardware para el ensamblado y/o mantenimiento de un equipo microinformático
+    - ❎ Se han descrito las características técnicas de cada uno de los componentes hardware (internos y externos) utilizados en el montaje y/o mantenimiento de un equipo microinformático
+    - ❎ Se han localizado los bloques funcionales en placas bases utilizadas en los sistemas microinformáticos
+    - ❎ Se han identificado los tipos de puertos, bahías internas y cables de conexión (de datos y eléctricos, entre otros) existentes de un equipo microinformático
+    - ❎ Se han seguido las instrucciones recibidas
 
     ??? QUESTION "Desglose"
-        - ❎ Elementos básicos: Pilas y baterías, pulsadores, interruptores, fuentes de alimentación, resistencias, condensadores, diodos, transistores, led, entre otros
-        - ❎ Herramientas utilizadas en los procedimientos de montaje de componentes y periféricos informáticos
-        - ❎ Unidades funcionales de un sistema informático
-        - ❎ Componentes de los sistemas microinformáticos: tipos de carcasas, fuentes de alimentación, ventiladores y disipadores de calor
+        - Elementos básicos: Pilas y baterías, pulsadores, interruptores, fuentes de alimentación, resistencias, condensadores, diodos, transistores, led, entre otros
+        - Herramientas utilizadas en los procedimientos de montaje de componentes y periféricos informáticos
+        - Unidades funcionales de un sistema informático
+        - Componentes de los sistemas microinformáticos: tipos de carcasas, fuentes de alimentación, ventiladores y disipadores de calor
         - La placa base Microprocesadores, zócalos y tipos Memorias RAM, características y formatos
         - Buses y conectores de datos
-        - ❎ Cableado y conectores de potencia
-        - ❎ Zócalos y bahías de expansión
+        - Cableado y conectores de potencia
+        - Zócalos y bahías de expansión
         - Dispositivos de almacenamiento: discos duros, características y tipos; Lectores/grabadores ópticos y magneto-ópticos, características y tipos
-        - ❎ Puertos: paralelo, serie, USB (Bus de Serie Universal), «Firewire» (IEEE 1394), entre otros
+        - Puertos: paralelo, serie, USB (Bus de Serie Universal), «Firewire» (IEEE 1394), entre otros
         - Seguridad en el uso de herramientas y componentes eléctricos y electrónicos
         - Seguridad eléctrica: medidas de prevención de riesgos eléctricos; daños producidos por descarga eléctrica
 
@@ -40,12 +40,12 @@ En esta asignatura veremos las tripas a los ordenadores, como funcionan por dent
 
 
 !!! TLDR "Tema 2 ~ ENSAMBLAJE DE COMPONENTES HARDWARE DE UN EQUIPO MICROINFORMÁTICO"
-    - Se ha comprobado cada componente antes de su utilización, siguiendo las normas de seguridad establecidas
-    - Se han interpretado las guías de instrucciones referentes a los procedimientos de integración o ensamblado, sustitución y conexión del componente hardware de un sistema microinformático
-    - Se han reconocido en distintas placas base cada uno de los zócalos de conexión de microprocesadores y los disipadores, entre otros
-    - Se han ensamblado los componentes hardware internos (memoria, procesador, tarjeta de video, pila, entre otros) en la placa base del sistema microinformático
-    - Se ha fijado cada dispositivo o tarjeta en la ranura o bahía correspondiente, según guías detalladas de instalación
-    - Se han conectado adecuadamente aquellos componentes hardware internos (disco duro, DVD, CD-ROM, entre otros) que necesiten cables de conexión para su integración en el sistema microinformático
+    - ❎ Se ha comprobado cada componente antes de su utilización, siguiendo las normas de seguridad establecidas
+    - ❎ Se han interpretado las guías de instrucciones referentes a los procedimientos de integración o ensamblado, sustitución y conexión del componente hardware de un sistema microinformático
+    - ❎ Se han reconocido en distintas placas base cada uno de los zócalos de conexión de microprocesadores y los disipadores, entre otros
+    - ❎ Se han ensamblado los componentes hardware internos (memoria, procesador, tarjeta de video, pila, entre otros) en la placa base del sistema microinformático
+    - ❎ Se ha fijado cada dispositivo o tarjeta en la ranura o bahía correspondiente, según guías detalladas de instalación
+    - ❎ Se han conectado adecuadamente aquellos componentes hardware internos (disco duro, DVD, CD-ROM, entre otros) que necesiten cables de conexión para su integración en el sistema microinformático
 
     ??? QUESTION "Desglose"
         - Procedimientos de instalación y fijación de componentes microinformático a la carcasa y a la placa base
