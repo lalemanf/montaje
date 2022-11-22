@@ -375,11 +375,6 @@ Todo sistema informático está compuesto, como ya hemos visto, por varios dispo
 
 ### 📦 Carcasas
 
-<figure markdown>
-  ![Redes](media/01-carcasa.jfif){ width="300" }
-  <figcaption>Tripas de una carcasa de un PC</figcaption>
-</figure>
-
 Son el armazón del equipo que contiene los componentes del computador, normalmente construidos de acero, plástico o aluminio. También podemos encontrarlas de otros materiales como madera o polimetilmetacrilato para cajas de diseño. A menudo de metal electrogalvanizado. Su función es la de proteger los componentes del computador. Es la caja o lugar donde se alojan todos los componentes internos del computador, el tipo de caja a utilizar depende de las características propias de la computadora donde se deben tener en cuenta: el tamaño, tipo de conectores internos, bahías para las unidades reproductoras/grabadoras de CD/DVD y la fuente de alimentación
 
 #### La cubierta

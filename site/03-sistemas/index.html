@@ -125,9 +125,83 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Tema 3 - Instalación de sistemas operativos
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         Tema 3 - Instalación de sistemas operativos
       </a>
+<nav aria-label="Tabla de contenidos" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vocabulario">
+    📒 Vocabulario
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#virtualizacion">
+    👩‍🚀 Virtualización
+  </a>
+<nav aria-label="👩‍🚀 Virtualización" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#virtual-box">
+    📦 Virtual Box
+  </a>
+<nav aria-label="📦 Virtual Box" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#la-pantalla-principal">
+    🔰 La pantalla principal
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#medios-virtuales-ctrl-d">
+    💽 Medios virtuales (CTRL + D)
+  </a>
+<nav aria-label="💽 Medios virtuales (CTRL + D)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#disco-duro-virtual">
+    💾 Disco Duro Virtual
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#imagen-de-disco-virtual">
+    💿 Imagen de disco virtual
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuracion-de-la-maquina-ctrl-s">
+    ⚙️ Configuración de la máquina (CTRL + S)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#arrancando-la-maquina-virtual">
+    ▶️ Arrancando la máquina virtual
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ejercicios">
+    🧰 EJERCICIOS
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../04-funcionalidad/">
@@ -152,6 +226,148 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="sistemas-operativos">Sistemas Operativos</h1>
+<figure>
+<p><a class="glightbox" href="../media/03-sistemas.png"><img alt="" src="../media/03-sistemas.png" width="400"/></a>
+</p>
+<figcaption></figcaption>
+</figure>
+<p>En este tema veremos la diferencia que existe entre un sistema operativo y una distribución basada en un sistema operativo. Además, estudiaremos e instalaremos los diferentes sistemas y distribuciones que existen mediante la técnica de virtualización con un <em>software</em> específico para ello.</p>
+<p>Por otro lado, aprenderemos a manejar el sistema de particionado de discos (sobretodo en discos virtuales) y las distintas herramientas que vienen de serie en cada uno de los sistemas que vayamos a instalar.</p>
+<h2 id="vocabulario">📒 Vocabulario</h2>
+<details class="info">
+<summary>Sistema anfitrión (Host)</summary>
+<p>Es el sistema operativo que se arranca cuando encendemos el ordenador original, el físico.</p>
+</details>
+<details class="info">
+<summary>Sistema huésped (Guest)</summary>
+<p>Es el sistema operativo que se inicia a través de un <em>software</em> de virtualización como <strong>VirtualBox</strong></p>
+</details>
+<h2 id="virtualizacion">👩‍🚀 Virtualización</h2>
+<figure>
+<p><a class="glightbox" href="../media/03-virtual.png"><img alt="" src="../media/03-virtual.png" width="200"/></a>
+</p>
+<figcaption></figcaption>
+</figure>
+<p>Como ya sabemos lo que es un sistema operativo, vamos directamente a ver cómo podemos arrancar un sistema dentro de otro sistema operativo por medio de la técnica de virtualización.</p>
+<p>La virtualización es una representación basada en software (es decir, virtual) de aplicaciones, servidores, almacenamiento y redes para reducir los gastos en la compra de equipos y aumentar la eficiencia y la agilidad.</p>
+<p>La virtualización permite mejorar la agilidad, la flexibilidad y la escalabilidad de la infraestructura de TI, al mismo tiempo que proporciona un importante ahorro de costes. Algunas ventajas de la virtualización, como la mayor movilidad de las cargas de trabajo, el aumento del rendimiento y de la disponibilidad de los recursos o la automatización de las operaciones, simplifican la gestión de la infraestructura de TI y permiten reducir los costes de propiedad y operativos.</p>
+<h3 id="virtual-box">📦 Virtual Box</h3>
+<figure>
+<p><a class="glightbox" href="../media/03-vbox.png"><img alt="" src="../media/03-vbox.png" width="250"/></a>
+</p>
+<figcaption></figcaption>
+</figure>
+<p>VirtualBox es una aplicación que sirve para hacer máquinas virtuales con instalaciones de sistemas operativos. Esto quiere decir que si tienes un ordenador con Windows, GNU/Linux o incluso macOS, puedes crear una máquina virtual con cualquier otro sistema operativo para utilizarlo dentro del que estés usando.</p>
+<p>En otras palabras, esto te va a permitir instalar otros sistemas operativos o el mismo que ya tienes dentro de tu ordenador. El primer caso te va a servir para probar las aplicaciones de otro sistema operativo para no tener que estar haciendo particiones o el proceso de instalar Linux junto a Windows.</p>
+<h4 id="la-pantalla-principal">🔰 La pantalla principal</h4>
+<figure>
+<p><a class="glightbox" href="../media/03-vbox-principal.png"><img alt="" src="../media/03-vbox-principal.png" width="600"/></a>
+</p>
+<figcaption></figcaption>
+</figure>
+<p>Esta es la pantalla principal del programa <strong><em>Oracle VirtualBox</em></strong> donde nos muestra un resumen de las máquinas virtuales que hemos instalado en nuestro sistema anfitrión (<em>host</em>).</p>
+<p>Conforme vayamos creando nuevas máquinas irán apareciendo en el menú de la izquierda, pudiendo seleccionar una o varias y configurando cada una de ellas, así como iniciarlas.</p>
+<div class="admonition error">
+<p class="admonition-title">Cuidado</p>
+<p>Sólo se permite correr una máquina virtual a la vez, debido a los recursos del sistema.</p>
+</div>
+<h4 id="medios-virtuales-ctrl-d">💽 Medios virtuales <em>(CTRL + D)</em></h4>
+<p>Los <strong>medios virtuales</strong> son los archivos de almacenamiento que se encuentran en el sistema anfitrión (host) y que pueden contener sistemas operativos en formato de <strong>imagen de disco</strong> o instalados.</p>
+<p>Dichos archivos tienen varias características en función de qué tipo de medio virtual es</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Sistema Operativo instalado</label><label for="__tabbed_1_2">Imagen de disco</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Este tipo de medio virtual es un archivo con extensión <strong>.vdi</strong> que contiene en su interior un sistema operativo (como Windows o Linux) ya instalado.</p>
+<p>Por lo general puede estar confeccionado de 2 maneras diferentes:</p>
+<ul>
+<li>
+<p><strong>Espacio reservado dinámicamente:</strong> A través del menú de configuración podremos especificar el tamaño máximo de este archivo (por ejemplo 20GB) pero ocupará lo que ocupe el sistema operativo instalado dentro de el. Conforme se vaya ocupando, el archivo en el ordenador anfitrión (host) irá aumentando.</p>
+</li>
+<li>
+<p><strong>Espacio fijo:</strong> A través del menú de configuración podremos especificar el tamaño máximo de este archivo (por ejemplo 20GB) y en el ordenador anfitrión (host) el archivo ocupará 20GB siempre, independientemente de si el sistema que está instalado dentro del archivo ocupa o no 20GB.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>En el mundo real (no virtual) son los discos duros (HDD) o SSD.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Las imágenes de disco suelen servir para instalar un sistema operativo o para arrancarlo de manera directa sin instalar nada.</p>
+<p>Gracias a estos discos podremos instalar cualquier distribución de Linux o Windows.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>En el mundo real (no virtual) suelen ser los CDs o DVDs de instalación.</p>
+</div>
+</div>
+</div>
+</input></input></div>
+<hr/>
+<figure>
+<p><a class="glightbox" href="../media/03-medios-virtuales.png"><img alt="" src="../media/03-medios-virtuales.png" width="600"/></a>
+</p>
+<figcaption></figcaption>
+</figure>
+<p>Para añadir un medio virtual, abriremos el <strong>Administrador de medios virtuales</strong> dentro de <strong>VirtualBox</strong></p>
+<h5 id="disco-duro-virtual">💾 Disco Duro Virtual</h5>
+<p>Si queremos añadir un nuevo disco duro virtual para posteriormente instalar un sistema dentro de el, pincharemos sobre el icono de <strong>Crear</strong>, crearemos un archivo VDI y le asignaremos <strong>tamaño dinámico</strong>.</p>
+<figure>
+<p><a class="glightbox" href="../media/03-hdd-virtual-1.png"><img alt="" src="../media/03-hdd-virtual-1.png" width="400"/></a>
+</p>
+<figcaption>Seleccionamos VDI</figcaption>
+</figure>
+<p>Seguidamente, indicaremos dónde queremos guardar este archivo (nuestro disco duro virtual) le asignaremos un nombre (normalmente el mismo nombre que el sistema que vayamos a instalar) y definiremos el tamaño (entre 15GB y 20GB)</p>
+<figure>
+<p><a class="glightbox" href="../media/03-hdd-virtual-2.png"><img alt="" src="../media/03-hdd-virtual-2.png" width="400"/></a>
+</p>
+<figcaption>Ubicación, nombre y tamaño</figcaption>
+</figure>
+<p>Una vez creado, aparecerá en la lista del gestor de medios virtuales de la siguiente manera</p>
+<figure>
+<p><a class="glightbox" href="../media/03-hdd-virtual-3.png"><img alt="" src="../media/03-hdd-virtual-3.png" width="400"/></a>
+</p>
+<figcaption>Discos virtuales</figcaption>
+</figure>
+<h5 id="imagen-de-disco-virtual">💿 Imagen de disco virtual</h5>
+<p>Para <strong>añadir</strong> una imagen de disco virtual (un instalador de sistema operativo) o archivo <strong>.iso</strong> primero de todo debemos descargar u obtener dicho archivo <strong>iso</strong> y después, en la pantalla de VirtualBox hay que apretar al botón de <strong>Añadir</strong>.</p>
+<p>Vamos a trabajar con Linux Mint, así que descargaremos la última versión <a href="https://mirror.airenetworks.es/linuxmint/iso/stable/21/linuxmint-21-cinnamon-64bit.iso" target="_blank">desde este enlace</a> y una vez que tengamos el archivo descargado, deberemos agregarlo a la lista de discos a través del <strong>Administrador de medios virtuales</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Ojo con ésto</p>
+<p>Dentro del <strong>Administrado de medios virtuales</strong> debemos seleccionar la pestaña <strong>Discos Ópticos</strong> para poder añadir una imagen de disco.</p>
+</div>
+<figure>
+<p><a class="glightbox" href="../media/03-iso-virtual.png"><img alt="" src="../media/03-iso-virtual.png" width="400"/></a>
+</p>
+<figcaption>Imagen de disco virtual</figcaption>
+</figure>
+<h4 id="configuracion-de-la-maquina-ctrl-s">⚙️ Configuración de la máquina <em>(CTRL + S)</em></h4>
+<figure>
+<p><a class="glightbox" href="../media/03-vbox-config.png"><img alt="" src="../media/03-vbox-config.png" width="600"/></a>
+</p>
+<figcaption>Configuración de la máquina virtual</figcaption>
+</figure>
+<p>Para configurar una máquina virtual, la seleccionaremos de la lista de la izquierda y le daremos a configuración.</p>
+<p>Para el ejemplo de clase vamos a trabajar con la siguiente configuración:</p>
+<ul>
+<li><strong>Memoria RAM</strong>: 4 GB</li>
+<li><strong>Disco Duro Virtual</strong>: LinuxMint.vdi</li>
+<li><strong>Imagen de disco virtual</strong>: linuxmint-21-cinnamon-64bit.iso</li>
+<li><strong>Procesadores</strong>: 4 (o 2 en caso de que no dispongamos de 4)</li>
+<li><strong>Memoria de video</strong>: 64MB</li>
+</ul>
+<h4 id="arrancando-la-maquina-virtual">▶️ Arrancando la máquina virtual</h4>
+<figure>
+<p><a class="glightbox" href="../media/03-play.png"><img alt="" src="../media/03-play.png" width="200"/></a>
+</p>
+<figcaption></figcaption>
+</figure>
+<p>Ahora que ya lo tenemos todo, tan sólo nos queda arrancar al máquina virtual y empezar a instalar el sistema operativo definiendo particiones de disco, programas y funcionalidades que se van a instalar, usuario y contraseña, localización, idioma entre otras.</p>
+<p>Recuerda que cada instalador tiene su propio menú con diferentes opciones pero que algunas, como es el caso del particionado de discos es común a todos los sistemas operativos.</p>
+<p>Más adelante veremos cómo particionar el disco correctamente para poder tener albergados varios sistemas operativos en un mismo archivo de almacenamiento virtual o <strong>.VDI</strong></p>
+<h2 id="ejercicios">🧰 EJERCICIOS</h2>
+<p>1.- ❎ Instala Linux Mint creando los medios virtuales que necesites para llevarlo a cabo. Recuerda que el disco duro virtual debe ocupar entre 15GB y 20GB.</p>
+<p>2.- ❎ Instala las <strong><em>Guest Additions</em></strong> de Virtual Box para poder tener la pantalla completa en la máquina virtual.</p>
+<p>3.- ❎ Instala el programa <strong>Visual Studio Code</strong> mediante el gestor de paquetes de Linux Mint.</p>
 </article>
 </div>
 </div>
