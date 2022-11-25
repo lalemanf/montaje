@@ -170,9 +170,15 @@ Más adelante veremos cómo particionar el disco correctamente para poder tener 
 
 1.- ❎ Instala Linux Mint creando los medios virtuales que necesites para llevarlo a cabo. Recuerda que el disco duro virtual debe ocupar entre 15GB y 20GB.
 
+---
+
 2.- ❎ Instala las ***Guest Additions*** de Virtual Box para poder tener la pantalla completa en la máquina virtual.
 
+---
+
 3.- ❎ Instala el programa **Visual Studio Code** mediante el gestor de paquetes de Linux Mint.
+
+---
 
 4.- ❎ Investiga todos las distribuciones de Linux de la siguiente lista y haz un resumen de cada una de ellas **mínimo 100 palabras** por cada distribución, añadiendo su logotipo al texto.
 
@@ -188,3 +194,19 @@ Más adelante veremos cómo particionar el disco correctamente para poder tener 
     - Kubuntu
 
 5.- Elige una de las distribuciones que más te ha gustado de la lista anterior y **crea una máquina virtual** con dicho sistema. Acuérdate que como máximo tienes que crear un disco duro virtual de entre 15 y 20 gigas de espacio que vaya aumentando de manera dinámica.
+
+---
+
+6.- ¿Qué es un sistema de ficheros y cuántos existen? ¿cuáles son las limitaciones de cada uno de ellos? ¿en qué sistema operativo podemos encontrarlos? Elabora un documento recogiendo los sistemas de ficheros más utilizados en los 3 grandes Sistemas Operativos; Windows, OSx y Linux (cualquier distribución sirve)
+
+    - FAT
+    - FAT16
+    - FAT32
+    - NTFS
+    - HPF
+    - HFS+
+    - exFAT
+    - ext
+    - ext2
+    - ext3
+    - ext4
