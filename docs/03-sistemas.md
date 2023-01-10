@@ -165,6 +165,85 @@ Recuerda que cada instalador tiene su propio menú con diferentes opciones pero 
 
 Más adelante veremos cómo particionar el disco correctamente para poder tener albergados varios sistemas operativos en un mismo archivo de almacenamiento virtual o **.VDI**
 
+## 🪛 Herramientas de control de archivos
+
+<figure markdown>
+  ![](media/03-archivos.png){ width="400" }
+  <figcaption></figcaption>
+</figure>
+
+Ya sabemos instalar sistemas operativos, tanto en local como en una máquina virtual, vamos a ver más en profundidad las herramientas esenciales que brinda cada sistema operativo.
+
+### 💁 Usuarios y roles
+
+<figure markdown>
+  ![](media/03-usuarios.png){ width="400" }
+  <figcaption></figcaption>
+</figure>
+
+Todos los sistemas operativos disponen de una gestión de usuarios.
+
+Los usuarios tienen permisos determinados en función de un rol asignado. Dependiendo del sistema operativo tenemos unos roles u otros.
+
+#### 💻 Roles en Windows
+
+<figure markdown>
+  ![](media/03-windows.png){ width="300" }
+  <figcaption></figcaption>
+</figure>
+
+En Windows, existen varios roles de usuario con diferentes niveles de acceso y privilegios. Algunos de los roles de usuario más comunes son:
+
+**Usuario**: Es el rol predeterminado para la mayoría de los usuarios. Los usuarios tienen acceso a sus propios archivos y carpetas, pero no pueden realizar cambios en el sistema.
+
+**Administrador**: Los usuarios con este rol tienen acceso completo al sistema y pueden realizar cambios en configuraciones y aplicaciones.
+
+**Usuario de red**: Los usuarios con este rol tienen acceso limitado al sistema y pueden conectarse a una red, pero no pueden instalar aplicaciones ni realizar cambios en configuraciones.
+
+**Usuario de invitado**: Los usuarios con este rol tienen acceso limitado al sistema y no pueden realizar cambios en configuraciones. Es utilizado para proporcionar acceso temporal a un usuario desconocido.
+
+**Usuario de control de cuentas de usuario (UAC)**: El Usuario de control de cuentas de usuario es un rol de seguridad en el sistema operativo Windows desde Windows vista y posteriores, que limita el acceso y los cambios del sistema solo a usuarios administradores.
+
+!!! WARNING "Atención"
+    Los roles de usuario se utilizan para controlar quién tiene acceso a qué funciones del sistema y para garantizar la seguridad del sistema operativo. Es importante asignar a los usuarios el rol adecuado y configurar las políticas de seguridad de forma adecuada para proteger el sistema operativo.
+
+#### 🖥️ Roles en Linux
+
+<figure markdown>
+  ![](media/03-linux.png){ width="300" }
+  <figcaption></figcaption>
+</figure>
+
+En Linux, también existen varios roles de usuario con diferentes niveles de acceso y privilegios. Algunos de los roles de usuario más comunes son:
+
+**Usuario**: Es el rol predeterminado para la mayoría de los usuarios. Los usuarios tienen acceso a sus propios archivos y carpetas, pero no pueden realizar cambios en el sistema.
+
+**Root**: El usuario root es el usuario con acceso completo al sistema y puede realizar cambios en configuraciones y aplicaciones. Es el superusuario, y tiene acceso a todo el sistema, incluyendo todos los archivos y configuraciones.
+
+**Usuario de sistema**: Los usuarios con este rol son los usuarios necesarios para el correcto funcionamiento del sistema, y suelen tener acceso limitado a algunos recursos del sistema
+
+**Usuario de red**: Los usuarios con este rol tienen acceso limitado al sistema y pueden conectarse a una red, pero no pueden instalar aplicaciones ni realizar cambios en configuraciones.
+
+**Usuario de invitado**: Los usuarios con este rol tienen acceso limitado al sistema y no pueden realizar cambios en configuraciones. Es utilizado para proporcionar acceso temporal a un usuario desconocido.
+
+!!! ERROR "Recuerda"
+    Los roles de usuario se utilizan para controlar quién tiene acceso a qué funciones del sistema y para garantizar la seguridad del sistema operativo. Es importante asignar a los usuarios el rol adecuado y configurar las políticas de seguridad de forma adecuada para proteger el sistema operativo. Es importante también recordar que en sistemas Linux, es recomendable evitar usar el usuario root para tareas diarias, ya que al tener acceso completo al sistema, un mal uso puede causar daños graves.
+
+
+### 👩‍💼 Permisos y control de directorios
+
+Quizás no estemos tan familiarizados con este tema pero, en sistemas operativos basados en Unix o Linux (si, Macintosh está basado en Unix) el tema de los permisos es algo fundamental a la hora de gestionar el sistema operativo y los archivos que lo conforman.
+
+Existen diferentes herramientas de control de directorios y gestión de permisos disponibles en diferentes sistemas operativos. Algunas de ellas son:
+
+- **chmod**: Es una herramienta de línea de comandos en sistemas operativos basados en Unix, como Linux y macOS, que se utiliza para cambiar los permisos de acceso a archivos y carpetas.
+
+- **chown**: Es otra herramienta de línea de comandos en sistemas operativos basados en Unix que se utiliza para cambiar el propietario de un archivo o carpeta.
+
+- **icacls**: Es una herramienta de línea de comandos en sistemas operativos Windows que se utiliza para modificar los permisos de acceso a archivos y carpetas.
+
+- **Interfaz gráfica de usuario (GUI)**: La mayoría de los sistemas operativos tienen una interfaz gráfica de usuario que permite a los usuarios gestionar los permisos de acceso a archivos y carpetas de manera más sencilla. Por ejemplo, en Windows, se pueden cambiar los permisos de acceso a través del Explorador de archivos, mientras que en macOS se pueden cambiar los permisos de acceso a través del Finder.
+
 
 ## 🧰 EJERCICIOS
 
@@ -193,7 +272,7 @@ Más adelante veremos cómo particionar el disco correctamente para poder tener 
     - Tiny Core
     - Kubuntu
 
-5.- Elige una de las distribuciones que más te ha gustado de la lista anterior y **crea una máquina virtual** con dicho sistema. Acuérdate que como máximo tienes que crear un disco duro virtual de entre 15 y 20 gigas de espacio que vaya aumentando de manera dinámica.
+5.- ❎ Elige una de las distribuciones que más te ha gustado de la lista anterior y **crea una máquina virtual** con dicho sistema. Acuérdate que como máximo tienes que crear un disco duro virtual de entre 15 y 20 gigas de espacio que vaya aumentando de manera dinámica.
 
 ---
 
@@ -210,3 +289,19 @@ Más adelante veremos cómo particionar el disco correctamente para poder tener 
     - ext2
     - ext3
     - ext4
+
+---
+
+7.- Busca en Internet una imagen de Windows (como mínimo la versión 7 y máximo la 10) descárgala y prepara una nueva máquina virtual para instalar dicho sistema operativo
+
+---
+
+8.- Crea al menos 3 usuarios diferentes en la máquina virtual de Windows que acabas de instalar. Recuerda que cada usuario puede tener un rol diferente. Busca información en Internet de cómo crear usuarios y asignar roles distintos. Elabora un documento de cómo se hace dicha tarea, además, aporta capturas de pantalla con los usuarios creados. En el mismo documento, pon la lista de usuarios que has creado junto con el rol y la contraseña de cada uno. **No olvides subir el PDF a Aules**.
+
+---
+
+9.- Haz lo mismo que en el ejercicio 6 pero con otra imagen de Linux que no hayas instalado ya.
+
+---
+
+10.- Haz lo mismo que en el ejercicio 8 pero con la imagen de Linux que has instalado en el ejercicio 9.
