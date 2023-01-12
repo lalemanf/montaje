@@ -244,6 +244,98 @@ Existen diferentes herramientas de control de directorios y gestión de permisos
 
 - **Interfaz gráfica de usuario (GUI)**: La mayoría de los sistemas operativos tienen una interfaz gráfica de usuario que permite a los usuarios gestionar los permisos de acceso a archivos y carpetas de manera más sencilla. Por ejemplo, en Windows, se pueden cambiar los permisos de acceso a través del Explorador de archivos, mientras que en macOS se pueden cambiar los permisos de acceso a través del Finder.
 
+#### En Windows
+
+En Windows, cada archivo y carpeta tiene permisos de acceso asociados a diferentes usuarios y grupos de usuarios. Estos permisos pueden ser modificados utilizando el administrador de archivos de Windows o la línea de comandos con el comando **icacls**. Los permisos pueden ser configurados para permitir o denegar acceso a lectura, escritura y ejecución, así como para controlar el acceso a características específicas como el cambio de nombre o eliminación de un archivo o carpeta.
+
+##### A través de la Interfaz Gráfica de Usuario (GUI)
+
+Gracias a las **Herramientas Administrativas** de nuestro sistema Windows podemos gestionar los grupos y usuarios que existen en el equipo.
+
+<figure markdown>
+  ![](media/03-usuarios-gui-w.png){ width="600" }
+  <figcaption></figcaption>
+</figure>
+
+
+#### En Linux
+
+En Linux, cada archivo y directorio tiene permisos de lectura, escritura y ejecución asociados a tres grupos de usuarios: el propietario del archivo, el grupo del propietario y otros usuarios. Los permisos se pueden ver y modificar mediante el comando chmod. El comando ls -l también muestra los permisos actuales de un archivo o directorio.
+
+En Lliurex, una distribución de Linux basada en Ubuntu, se pueden cambiar los permisos de un archivo o carpeta utilizando la interfaz gráfica de usuario (GUI) de manera similar a como se hace en Ubuntu.
+
+Una forma de hacerlo es utilizando el administrador de archivos Nautilus:
+
+- Abrir el administrador de archivos Nautilus.
+- Buscas el archivo o carpeta que desea cambiar.
+- Clic con el botón derecho del mouse sobre el archivo o carpeta.
+- Seleccionamos "Propiedades" en el menú desplegable.
+- En la pestaña "Permisos" podrás ver y editar los permisos de lectura, escritura y ejecución para el propietario, el grupo y otros usuarios.
+- Otra forma es utilizando el comando **chmod** en la terminal, el cual te permite cambiar los permisos de forma mas precisa y rapidamente.
+
+
+### Control de directorios
+
+El sistema gestiona archivos y directorios de una manera eficaz y segura pero, es nuestro trabajo que todo esté en su sitio o establecer un patrón de organización a la hora de almacenar la información.
+
+Si tenemos una carpeta que contiene imágenes, a esta carpeta la podemos llamar **imágenes** y no **patatas** o cualquier otra cosa que no tenga nada que ver con el contenido.
+
+Lo mismo pasa con los subdirectorios, debemos organizarlos con lógica para que luego, a la hora de buscar contenido sea más fácil de encontrarlo.
+
+Algunas herramientas comunes de control de estructura de directorios y gestión de permisos en Lliurex son:
+
+- **chmod**: permite cambiar los permisos de un archivo o directorio.
+- **chown**: permite cambiar el propietario y el grupo propietario de un archivo o directorio.
+- **ls**: permite listar los archivos y directorios en una ruta específica, mostrando información sobre sus permisos y propietarios.
+- **mkdir**: permite crear un nuevo directorio.
+- **rmdir**: permite eliminar un directorio vacío.
+- **find**: permite buscar archivos y directorios en una ruta específica, utilizando diferentes criterios de búsqueda (por ejemplo, por nombre, por permisos, por fecha de modificación).
+
+Es importante tener en cuenta que estas herramientas deben ser utilizadas con precaución, ya que cambios malintencionados en los permisos o propietarios de archivos y directorios pueden causar problemas en el sistema.
+
+## Errores en la Fase de arranque
+
+Hay varios posibles fallos que pueden ocurrir en la fase de arranque de un equipo microinformático. Algunos de los más comunes incluyen:
+
+- **Error de arranque**: el sistema operativo no se inicia correctamente, lo que puede deberse a un problema con el sistema de arranque o un fallo en el hardware.
+
+- **Problemas de configuración**: el sistema no puede acceder a la configuración necesaria para iniciarse, como el sistema de archivos o la configuración de red.
+
+- **Problemas de hardware**: el sistema no puede detectar o acceder a ciertos componentes del hardware, como la unidad de disco duro o la memoria.
+
+- **Problemas de software**: el sistema no puede iniciar debido a un problema con un programa o controlador, o debido a un virus o malware.
+
+- **Problemas de inicio**: el sistema se queda en un bucle de arranque o no puede iniciarse debido a un problema con el arranque dual o la configuración de la BIOS.
+
+!!! ERROR "Cuidado!"
+    Es importante tener en cuenta que estos son solo algunos ejemplos generales, y que pueden existir muchas otras causas para los problemas de arranque. Además, es importante investigar cual es la causa específica del fallo y abordarlo de manera adecuada.
+
+
+
+## Copias de seguridad
+
+Las copias de seguridad son una medida importante para proteger los datos de un equipo microinformático contra fallos o pérdidas de datos. Al realizar copias de seguridad, se crea una copia de los datos importantes en un dispositivo de almacenamiento externo, como un disco duro externo o una unidad flash USB.
+
+Hay varias opciones disponibles para realizar copias de seguridad de los datos. Algunas de las opciones más comunes incluyen:
+
+- **Copias de seguridad manuales**: los usuarios pueden copiar y pegar manualmente los datos importantes en un dispositivo de almacenamiento externo.
+
+- **Copias de seguridad automáticas**: algunos programas de software permiten programar las copias de seguridad para que se realicen de forma automática en una fecha y hora específicas.
+
+- **Copias de seguridad en línea**: algunos servicios en línea permiten realizar copias de seguridad de los datos en un servidor remoto, lo que ofrece una mayor seguridad en caso de pérdida de datos.
+
+- **Copias de seguridad incremental**: estas copias de seguridad solo copian los cambios realizados en los archivos desde la última copia de seguridad, lo que permite ahorrar espacio y tiempo.
+
+!!! WARNING "Cuidado..."
+    Es importante asegurarse de que las copias de seguridad estén actualizadas y se almacenen en un lugar seguro y accesible. Es recomendable realizar copias de seguridad con cierta frecuencia, para asegurar que los datos estén siempre actualizados.
+
+
+
+
+
+---
+
+
 
 ## 🧰 EJERCICIOS
 
