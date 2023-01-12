@@ -276,7 +276,7 @@ Existen diferentes herramientas de control de directorios y gestión de permisos
 
 ---
 
-6.- ¿Qué es un sistema de ficheros y cuántos existen? ¿cuáles son las limitaciones de cada uno de ellos? ¿en qué sistema operativo podemos encontrarlos? Elabora un documento recogiendo los sistemas de ficheros más utilizados en los 3 grandes Sistemas Operativos; Windows, OSx y Linux (cualquier distribución sirve)
+6.- ❎ ¿Qué es un sistema de ficheros y cuántos existen? ¿cuáles son las limitaciones de cada uno de ellos? ¿en qué sistema operativo podemos encontrarlos? Elabora un documento recogiendo los sistemas de ficheros más utilizados en los 3 grandes Sistemas Operativos; Windows, OSx y Linux (cualquier distribución sirve)
 
     - FAT
     - FAT16
@@ -292,11 +292,11 @@ Existen diferentes herramientas de control de directorios y gestión de permisos
 
 ---
 
-7.- Busca en Internet una imagen de Windows (como mínimo la versión 7 y máximo la 10) descárgala y prepara una nueva máquina virtual para instalar dicho sistema operativo
+7.- ❎ Busca en Internet una imagen de Windows (como mínimo la versión 7 y máximo la 10) descárgala y prepara una nueva máquina virtual para instalar dicho sistema operativo
 
 ---
 
-8.- Crea al menos 3 usuarios diferentes en la máquina virtual de Windows que acabas de instalar. Recuerda que cada usuario puede tener un rol diferente. Busca información en Internet de cómo crear usuarios y asignar roles distintos. Elabora un documento de cómo se hace dicha tarea, además, aporta capturas de pantalla con los usuarios creados. En el mismo documento, pon la lista de usuarios que has creado junto con el rol y la contraseña de cada uno. **No olvides subir el PDF a Aules**.
+8.- ❎ Crea al menos 3 usuarios diferentes en la máquina virtual de Windows que acabas de instalar. Recuerda que cada usuario puede tener un rol diferente. Busca información en Internet de cómo crear usuarios y asignar roles distintos. Elabora un documento de cómo se hace dicha tarea, además, aporta capturas de pantalla con los usuarios creados. En el mismo documento, pon la lista de usuarios que has creado junto con el rol y la contraseña de cada uno. **No olvides subir el PDF a Aules**.
 
 ---
 
